@@ -1,0 +1,27 @@
+.body {
+    background: mediumseagreen;
+}
+
+.bodyHeader {
+    color: burlywood
+}
+
+.mainHeader {
+    color: rgb(91, 136, 134);
+}
+
+.sectionHeader {
+    color: lightblue;
+}
+
+.articleHeader {
+    color: rgb(72, 89, 95);
+}
+
+.sectionLink {
+    color: #C9D9E8;
+}
+
+.siteNavi {
+    color: lightslategrey;
+}
