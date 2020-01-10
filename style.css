@@ -1,27 +1,124 @@
 .body {
-    background: mediumseagreen;
+    background: #ECEBF3;
+    margin: 0px auto;
+    max-width: 800px;
+    min-width: 700px;
 }
 
-.bodyHeader {
-    color: burlywood
+.navigation {
+    color: #475B5A;
+    background: #ECEBF3;
+    text-decoration: none;
+    padding: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0px auto;
 }
 
-.mainHeader {
-    color: rgb(91, 136, 134);
-}
-
-.sectionHeader {
-    color: lightblue;
-}
-
-.articleHeader {
-    color: rgb(72, 89, 95);
-}
-
-.sectionLink {
-    color: #C9D9E8;
-}
-
-.siteNavi {
+.navigation__link {
+    padding: 5px;
     color: lightslategrey;
+    text-decoration: none;
+}
+
+.navigation__link--top {
+    position: fixed;
+    right: 0px;
+    bottom: 15px;
+    padding: 5px;
+}
+
+.main {
+    width: 100%;
+    max-width: 350px;
+    margin: 30px auto;
+}
+
+.main__header {
+    padding-top: 30px;
+}
+
+.main__header--title {
+    color: #4c8e8a;
+    font-size: 32px;
+    text-align: center;
+}
+
+.main__image {
+    width: 100%;
+    max-width: 350px;
+}
+
+.where {
+    width: 100%;
+}
+
+.where__image {
+    padding-right: 10px;
+    max-width: 200px;
+    float: left;
+}
+
+.where__paragraph {
+    width: 100%;
+    display: block;
+}
+
+.stock {
+    clear: both;
+}
+
+.stock__header {}
+
+.stock__link {
+    color: #9B9B93;
+    text-decoration: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #475B5A;
+    border: 10px solid yellowgreen;
+    box-sizing: border-box;
+    top: 10px;
+    left: 50%;
+}
+
+.aboutCompany {}
+
+.aboutCompany__header {
+    color: #7FC6A4;
+    padding-top: 20px;
+}
+
+.aboutCompany__image {
+    max-width: 200px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.section__header {
+    text-decoration: none;
+    color: #7FC6A4;
+    font-size: 20px;
+    padding: 16px 0 0 16px;
+}
+
+.paragraph {
+    color: #9B9B93;
+    width: 100%;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+.footer {
+    background: #ECEBF3;
+    box-sizing: border-box;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0%;
 }
