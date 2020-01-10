@@ -1,3 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutCompany {}
+
+.aboutCompany__header {
+    color: #7FC6A4;
+    padding-top: 20px;
+}
+
+.aboutCompany__image {
+    max-width: 200px;
+    padding: 0px 10px;
+    float: left;
+}
+
 .body {
     background: #ECEBF3;
     margin: 0px auto;
@@ -5,18 +23,7 @@
     min-width: 700px;
 }
 
-.navigation {
-    color: #475B5A;
-    background: #ECEBF3;
-    text-decoration: none;
-    padding: 16px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: 0px auto;
-}
+.header {}
 
 .navigation__link {
     padding: 5px;
@@ -50,6 +57,30 @@
 .main__image {
     width: 100%;
     max-width: 350px;
+}
+
+.menu__navigation__bar {
+    background: rgb(55, 53, 73);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu__item {
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu__item__link {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.menu__item:hover {
+    background-color: black;
 }
 
 .where {
@@ -86,19 +117,6 @@
     box-sizing: border-box;
     top: 10px;
     left: 50%;
-}
-
-.aboutCompany {}
-
-.aboutCompany__header {
-    color: #7FC6A4;
-    padding-top: 20px;
-}
-
-.aboutCompany__image {
-    max-width: 200px;
-    padding: 0px 10px;
-    float: left;
 }
 
 .section__header {
