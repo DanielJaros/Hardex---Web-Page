@@ -112,14 +112,22 @@
     background-color: #EF233C;
 }
 
+.v33__homepage__link {
+    transition: border 1s;
+}
+
 .menu__logo__v33__image {
-    box-sizing: content-box;
-    width: 59px;
     border: 2px solid #CEE0DC;
     border-radius: 3px;
+    box-sizing: content-box;
     position: absolute;
-    top: 1px;
     right: 40px;
+    width: 59px;
+    top: 1px;
+}
+
+.menu__logo__v33__image:hover {
+    border-color: #EF233C;
 }
 
 .navigation__link {
