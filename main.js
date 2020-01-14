@@ -16,3 +16,10 @@ console.log(paragraphs);
 
 const where__header = document.querySelector('.where__header');
 console.log(where__header.innerHTML);
+
+// podmienianie tekstu na stronie NIEDZIAŁA!!!!!!!!!!!!!!!!!!
+
+/* 
+const a = document.querySelector('.main__header__paragraph');
+a.innerHTML = 'Działa';
+*/

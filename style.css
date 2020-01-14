@@ -74,19 +74,19 @@
 }
 
 .main__inspiration__image {
-    padding-bottom: 10px;
-    width: auto;
     height: 280px;
+    width: auto;
+    padding-bottom: 10px;
 }
 
 .menu__navigation__bar {
     background: #19323C;
     border-bottom: 3px solid rgba(225, 225, 225, .3);
-    width: 100%;
+    display: flex;
     height: 50px;
     position: sticky;
     top: 0;
-    display: flex;
+    width: 100%;
 }
 
 .menu {
@@ -96,16 +96,16 @@
 }
 
 .menu__item {
-    display: block;
+    display: flex;
     padding: 20px;
-    transition-duration: .4s;
+    transition: background 1s;
 }
 
 .menu__item__link {
-    text-decoration: none;
     color: #CEE0DC;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .menu__item:hover {
