@@ -1,202 +1,211 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.aboutCompany {}
-
-.aboutCompany__header {
-    color: #7FC6A4;
-    padding-top: 20px;
-}
-
-.aboutCompany__image {
-    max-width: 200px;
-    padding: 0px 10px;
-    float: left;
-}
-
-.body {
-    background: #CEE0DC;
-    margin: 0px auto;
-    width: auto;
-}
-
-.body__header--title {
-    font-size: 40px;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.body__logo__link {
-    color: #CEE0DC;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.header {
-    background-color: #19323C;
-    height: 100px;
-}
-
-.main {
-    width: 100%;
-    max-width: 800px;
-    margin: 30px auto;
-}
-
-.main__header {
-    padding-top: 0px;
-    text-align: center;
-}
-
-.main__header--title {
-    color: #514F59;
-    font-size: 25px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-}
-
-.main__header__paragraph {
-    color: #514F59;
-    font-size: 16px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.main__azure__image,
-.main__inspiration__image {
-    display: inline-block;
-    max-width: 300px;
-    padding: 0 20px;
-}
-
-.main__inspiration__image {
-    height: 280px;
-    width: auto;
-    padding-bottom: 10px;
-}
-
-.menu__navigation__bar {
-    background: #19323C;
-    border-bottom: 3px solid rgba(225, 225, 225, .3);
-    display: flex;
-    height: 50px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-.menu {
-    display: flex;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.menu__item {
-    display: flex;
-    padding: 20px;
-    transition: background 1s;
-}
-
-.menu__item__link {
-    color: #CEE0DC;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-
-.menu__item:hover {
-    background-color: #EF233C;
-}
-
-.v33__homepage__link {
-    transition: border 1s;
-}
-
-.menu__logo__v33__image {
-    border: 2px solid #CEE0DC;
-    border-radius: 3px;
-    box-sizing: content-box;
-    position: absolute;
-    right: 40px;
-    width: 59px;
-    top: 1px;
-}
-
-.menu__logo__v33__image:hover {
-    border-color: #EF233C;
-}
-
-.navigation__link {
-    padding: 5px;
-    color: lightslategrey;
-    text-decoration: none;
-}
-
-.navigation__link--top {
-    position: fixed;
-    right: 0px;
-    bottom: 15px;
-    padding: 5px;
-}
-
-.where {
-    width: 100%;
-}
-
-.where__image {
-    padding-right: 10px;
-    max-width: 200px;
-    float: left;
-}
-
-.where__paragraph {
-    width: 100%;
-    display: block;
-}
-
-.stock {
-    clear: both;
-}
-
-.stock__header {}
-
-.stock__link {
-    color: #9B9B93;
-    text-decoration: none;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    background: #475B5A;
-    border: 10px solid yellowgreen;
-    box-sizing: border-box;
-    top: 10px;
-    left: 50%;
-}
-
-.section__header {
-    text-decoration: none;
-    color: #7FC6A4;
-    font-size: 20px;
-    padding: 16px 0 0 16px;
-}
-
-.paragraph {
-    color: #9B9B93;
-    width: 100%;
-    line-height: 20px;
-    padding-top: 16px;
-}
-
-.footer {
-    background: #ECEBF3;
-    box-sizing: border-box;
-    font-size: 10px;
-    position: fixed;
-    bottom: 0%;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .active {
+        background-color: #EF233C;
+        color: #475B5A;
+    }
+    
+    .activeHomePage {
+        color: #EF233C
+    }
+    
+    .aboutCompany {}
+    
+    .aboutCompany__header {
+        color: #7FC6A4;
+        padding-top: 20px;
+    }
+    
+    .aboutCompany__image {
+        max-width: 200px;
+        padding: 0px 10px;
+        float: left;
+    }
+    
+    .body {
+        background: #CEE0DC;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px auto;
+        min-width: 810px;
+        width: auto;
+    }
+    
+    .body__header--title {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .body__logo__link {
+        color: #CEE0DC;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 1s;
+    }
+    
+    .body__logo__link__home {
+        color: #EF233C;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 1s;
+    }
+    
+    .body__logo__link:hover {
+        color: #EF233C;
+    }
+    
+    .header {
+        background-color: #19323C;
+        height: 100px;
+    }
+    
+    .main {
+        width: 100%;
+        max-width: 800px;
+        margin: 30px auto;
+    }
+    
+    .main__header {
+        padding-top: 0px;
+        text-align: center;
+    }
+    
+    .main__header--title {
+        color: #514F59;
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .main__header__paragraph {
+        color: #514F59;
+        font-size: 16px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .main__azure__image,
+    .main__inspiration__image {
+        display: inline-block;
+        max-width: 300px;
+        padding: 0 20px;
+    }
+    
+    .main__inspiration__image {
+        height: 280px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+    
+    .menu__navigation__bar {
+        background: #19323C;
+        box-shadow: 1px 1px 6px rgba(41, 38, 38, 0.767);
+        display: flex;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    
+    .menu {
+        display: flex;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .menu__item {
+        display: flex;
+        padding: 20px;
+        transition: background 1s;
+    }
+    
+    .menu__item__link {
+        color: #CEE0DC;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .menu__item:hover {
+        background-color: rgba(255, 0, 0, 0.438);
+    }
+    
+    .menu__v33__homepage__link {}
+    
+    .menu__logo__v33__image {
+        border: 2px solid #CEE0DC;
+        border-radius: 3px;
+        box-sizing: content-box;
+        position: absolute;
+        right: 40px;
+        width: 59px;
+        top: 1px;
+        transition: border 1s;
+    }
+    
+    .menu__logo__v33__image:hover {
+        border-color: rgb(202, 19, 19);
+    }
+    
+    .navigation__link {
+        padding: 5px;
+        color: lightslategrey;
+        text-decoration: none;
+    }
+    
+    .navigation__link--top {
+        position: fixed;
+        right: 0px;
+        bottom: 15px;
+        padding: 5px;
+    }
+    
+    .where {
+        width: 100%;
+    }
+    
+    .where__image {
+        padding-right: 10px;
+        max-width: 200px;
+        float: left;
+    }
+    
+    .where__paragraph {
+        width: 100%;
+        display: block;
+    }
+    
+    .stock {
+        clear: both;
+    }
+    
+    .stock__header {}
+    
+    .stock__link {
+        color: #9B9B93;
+        text-decoration: none;
+    }
+    
+    .section__header {
+        text-decoration: none;
+        color: #7FC6A4;
+        font-size: 20px;
+        padding: 16px 0 0 16px;
+    }
+    
+    .paragraph {
+        color: #9B9B93;
+        width: 100%;
+        line-height: 20px;
+        padding-top: 16px;
+    }
+    
+    .footer {
+        background: rgba(0, 0, 0, .0);
+        box-sizing: border-box;
+        font-size: 10px;
+        position: fixed;
+        bottom: 0%;
+    }

@@ -1,3 +1,12 @@
+/*$("li").click(function() {
+    $("li").css("background-color", "");
+    $(this).css("background-color", "red")
+});
+*/
+$(document).on('click', 'ul li', function() {
+    $(this).addClass('active')
+})
+
 console.log('siema');
 const name = 'Daniel Jaros';
 const age = 35;
@@ -14,8 +23,8 @@ console.log(header);
 const paragraphs = document.querySelectorAll('p');
 console.log(paragraphs);
 
-const where__header = document.querySelector('.where__header');
-console.log(where__header.innerHTML);
+const whereHeader = document.querySelector('.section__header');
+console.log(header.innerHTML);
 
 // podmienianie tekstu na stronie NIEDZIAŁA!!!!!!!!!!!!!!!!!!
 
@@ -23,3 +32,5 @@ console.log(where__header.innerHTML);
 const a = document.querySelector('.main__header__paragraph');
 a.innerHTML = 'Działa';
 */
+
+// Change background color of active link nav bar
