@@ -1,6 +1,7 @@
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     
     .active {
@@ -103,18 +104,19 @@
     
     .menu {
         display: flex;
-        text-align: center;
+        list-style: none;
         padding: 0 20px;
+        text-align: center;
     }
     
     .menu__item {
         margin: 0;
         padding: 0;
-        display: flex;
+        display: inline-block;
         height: auto;
-        width: auto;
         text-align: center;
         transition: background 1s;
+        max-width: 198px;
     }
     
     .menu__item__link {
@@ -125,7 +127,6 @@
         text-decoration: none;
         text-align: center;
         height: auto;
-        width: auto;
     }
     
     .menu__item:hover {
@@ -147,6 +148,78 @@
     
     .menu__logo__v33__image:hover {
         border-color: rgb(202, 48, 48);
+    }
+    
+    .menu__subMenu__in__conteiner {
+        display: none;
+        height: auto;
+        max-width: 850px;
+        position: relative;
+        text-align: left;
+    }
+    
+    .menu__subMenu__out__conteiner {
+        display: none;
+        width: auto;
+        text-align: left;
+    }
+    
+    .menu__item:hover .menu__subMenu__in__conteiner {
+        background-color: #B0B2B1;
+        display: inline;
+        position: absolute;
+        left: 1em;
+    }
+    
+    .menu__item:hover .menu__subMenu__out__conteiner {
+        background-color: #B0B2B1;
+        display: inline;
+        position: absolute;
+        left: 1em;
+    }
+    
+    .menu__subMenu {
+        display: block;
+    }
+    
+    .menu__subMenu__item {
+        display: inline-flex;
+        font-size: 20px;
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .menu__subMenu__item:last-child {
+        padding-right: 20px;
+    }
+    
+    .menu__subMenu__item--conteiner {
+        display: inline-table;
+        width: auto;
+        width: 250px;
+    }
+    
+    .menu__subMenu__link {
+        color: #19323C;
+        display: block;
+        width: auto;
+        text-decoration: none;
+    }
+    
+    .menu__subMenu__productsList {
+        display: block;
+    }
+    
+    .menu__subMenu__productsList__item {
+        display: block;
+        list-style: none;
+        text-align: left;
+    }
+    
+    .menu__subMenu__productsList__link {
+        text-decoration: none;
+        display: block;
+        padding: 10px;
     }
     
     .navigation__link {
