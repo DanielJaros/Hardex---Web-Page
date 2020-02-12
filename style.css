@@ -55,6 +55,17 @@
         height: 100px;
     }
     
+    .label-wraper {
+        display: block;
+    }
+    
+    .label-wraper-description {
+        color: #435058;
+        display: block;
+        font-size: 15px;
+        padding: 10px;
+    }
+    
     .main {
         width: 100%;
         max-width: 800px;
@@ -96,7 +107,7 @@
         background: #19323C;
         box-shadow: 1px 1px 6px rgba(41, 38, 38, 0.767);
         display: flex;
-        height: 50px;
+        height: 70px;
         position: sticky;
         top: 0;
         width: 100%;
@@ -104,6 +115,7 @@
     
     .menu {
         display: flex;
+        height: 70px;
         list-style: none;
         padding: 0 20px;
         text-align: center;
@@ -116,17 +128,17 @@
         height: auto;
         text-align: center;
         transition: background 1s;
-        max-width: 198px;
+        max-width: 150px;
     }
     
     .menu__item__link {
         color: #CEE0DC;
         cursor: pointer;
         display: block;
-        padding: 20px;
+        height: auto;
+        padding: 17px 20px;
         text-decoration: none;
         text-align: center;
-        height: auto;
     }
     
     .menu__item:hover {
@@ -153,13 +165,24 @@
     .menu__subMenu__in__conteiner {
         display: none;
         height: auto;
-        max-width: 850px;
+        margin: 0 auto;
+        max-width: 950px;
         position: relative;
         text-align: left;
     }
     
     .menu__subMenu__out__conteiner {
         display: none;
+        margin: 0 auto;
+        max-width: 950px;
+        width: auto;
+        text-align: left;
+    }
+    
+    .menu__subMenu__liberon {
+        display: none;
+        margin: 0 auto;
+        max-width: 950px;
         width: auto;
         text-align: left;
     }
@@ -167,26 +190,56 @@
     .menu__item:hover .menu__subMenu__in__conteiner {
         background-color: #B0B2B1;
         display: inline;
+        margin: 0 auto;
+        max-width: 818px;
         position: absolute;
-        left: 1em;
+        left: 2em;
+        right: 2em;
     }
     
     .menu__item:hover .menu__subMenu__out__conteiner {
         background-color: #B0B2B1;
         display: inline;
+        margin: 0 auto;
+        max-width: 818px;
+        width: auto;
         position: absolute;
-        left: 1em;
+        left: 2em;
+        right: 2em;
+    }
+    
+    .menu__item:hover .menu__subMenu__liberon {
+        background-color: #B0B2B1;
+        display: inline;
+        margin: 0 auto;
+        max-width: 818px;
+        width: auto;
+        position: absolute;
+        left: 2em;
+        right: 2em;
     }
     
     .menu__subMenu {
         display: block;
     }
     
+    .menu__subMenu__link:hover {
+        color: #CEE0DC;
+    }
+    
+    .menu__subMenu__link:hover .label-wraper-description {
+        color: #CEE0DC;
+    }
+    
+    .menu__subMenu__productsList__link:hover {
+        color: #CEE0DC;
+    }
+    
     .menu__subMenu__item {
         display: inline-flex;
         font-size: 20px;
         list-style: none;
-        padding: 20px;
+        padding: 20px 0px 20px 20px;
     }
     
     .menu__subMenu__item:last-child {
@@ -195,14 +248,14 @@
     
     .menu__subMenu__item--conteiner {
         display: inline-table;
-        width: auto;
-        width: 250px;
+        max-width: 233px;
+        width: 100%;
     }
     
     .menu__subMenu__link {
         color: #19323C;
         display: block;
-        width: auto;
+        width: 243px;
         text-decoration: none;
     }
     
@@ -217,9 +270,11 @@
     }
     
     .menu__subMenu__productsList__link {
-        text-decoration: none;
+        color: #435058;
         display: block;
+        font-size: 15px;
         padding: 10px;
+        text-decoration: none;
     }
     
     .navigation__link {
