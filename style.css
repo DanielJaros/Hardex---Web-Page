@@ -31,17 +31,20 @@
     }
     
     .body__header--title {
-        font-size: 40px;
-        text-align: center;
+        font-size: 55px;
+        text-align: left;
         padding-top: 30px;
+        padding-left: 30px;
     }
     
     .body__logo__link {
         border: 2px solid #19323C;
         border-radius: 3px;
+        box-sizing: content-box;
         color: #CEE0DC;
         font-weight: bold;
-        padding: 5px;
+        height: 55px;
+        padding: 0px 9px 0px 7px;
         text-decoration: none;
         transition: border 1s;
     }
@@ -52,7 +55,25 @@
     
     .header {
         background-color: #19323C;
-        height: 100px;
+        height: 115px;
+    }
+    
+    .header__v33__homepage__link {}
+    
+    .header__logo__v33__image {
+        border: 2px solid #CEE0DC;
+        border-radius: 3px;
+        box-sizing: content-box;
+        height: 55px;
+        margin-top: 3px;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        transition: border 1s;
+    }
+    
+    .header__logo__v33__image:hover {
+        border-color: rgb(202, 48, 48);
     }
     
     .label-wraper {
@@ -143,23 +164,6 @@
     
     .menu__item:hover {
         background-color: rgba(255, 0, 0, 0.438);
-    }
-    
-    .menu__v33__homepage__link {}
-    
-    .menu__logo__v33__image {
-        border: 2px solid #CEE0DC;
-        border-radius: 3px;
-        box-sizing: content-box;
-        position: absolute;
-        right: 40px;
-        width: 59px;
-        top: 1px;
-        transition: border 1s;
-    }
-    
-    .menu__logo__v33__image:hover {
-        border-color: rgb(202, 48, 48);
     }
     
     .menu__subMenu__in__conteiner {
