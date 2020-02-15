@@ -311,7 +311,6 @@
     
     .prodocts_col_left {
         width: 33.33%;
-        text-transform: uppercase;
     }
     
     .products_col_right {
@@ -320,6 +319,7 @@
     
     .products_box--conteiner {
         display: flex;
+        margin-top: 20px;
         width: 100%;
     }
     
@@ -346,7 +346,7 @@
     }
     
     .product_box:hover .product_box--header {
-        color: CEE0DC;
+        color: #CEE0DC;
     }
     
     .product_box--link {
@@ -363,9 +363,9 @@
     
     .products-inspiration-image {
         display: block;
+        height: 350px;
         margin: 0 auto;
         padding: 20px;
-        width: 500px;
     }
     
     .products__main {
@@ -379,10 +379,19 @@
         display: block;
     }
     
+    .products__main--paragraph {
+        color: #19323C;
+        display: block;
+        font-size: 15px;
+        margin: 0 auto;
+        padding: 60px 20px 0;
+    }
+    
     .products__main--title {
         color: #19323C;
         display: block;
         padding: 20px;
+        text-transform: uppercase;
     }
     
     .products_row {
