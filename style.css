@@ -326,12 +326,19 @@
     .product_box {
         background-color: #19323C;
         height: 200px;
-        margin-right: 20px;
+        padding-right: 20px;
         width: 33.33%;
     }
     
     .product_box:last-child {
         margin-right: 0;
+    }
+    
+    .product_box-2 {
+        background-color: #19323C;
+        height: 200px;
+        margin-right: 20px;
+        width: 33.33%;
     }
     
     .product_box--header {
