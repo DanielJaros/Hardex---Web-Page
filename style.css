@@ -4,9 +4,16 @@
         box-sizing: border-box;
     }
     
+     :root {
+        --primary: #CEE0DC;
+        --active: rgb(202, 48, 48);
+        --dark: #19323C;
+        --subMenuBackground: #B0B2B1;
+        --shadow: 0 1px 5px rgba(41, 38, 38, 0.767);
+    }
+    
     .active {
-        background-color: rgb(202, 48, 48);
-        color: #475B5A;
+        background-color: var(--active) color: #475B5A;
     }
     
     .aboutCompany {}
@@ -23,7 +30,7 @@
     }
     
     .body {
-        background: #CEE0DC;
+        background: var(--primary);
         font-family: Arial, Helvetica, sans-serif;
         margin: 0px auto;
         width: auto;
@@ -38,10 +45,10 @@
     }
     
     .body__logo__link {
-        border: 2px solid #19323C;
+        border: 2px solid var(--dark);
         border-radius: 3px;
         box-sizing: content-box;
-        color: #CEE0DC;
+        color: var(--primary);
         font-weight: bold;
         height: 55px;
         padding: 0px 9px 0px 7px;
@@ -50,18 +57,18 @@
     }
     
     .body__logo__link:hover {
-        border-color: rgb(202, 48, 48);
+        border-color: var(--active);
     }
     
     .header {
-        background-color: #19323C;
+        background-color: var(--dark);
         height: 115px;
     }
     
     .header__v33__homepage__link {}
     
     .header__logo__v33__image {
-        border: 2px solid #CEE0DC;
+        border: 2px solid var(--primary);
         border-radius: 3px;
         box-sizing: content-box;
         height: 55px;
@@ -73,7 +80,7 @@
     }
     
     .header__logo__v33__image:hover {
-        border-color: rgb(202, 48, 48);
+        border-color: var(--active);
     }
     
     .label-wraper {
@@ -125,7 +132,7 @@
     }
     
     .menu__navigation__bar {
-        background: #19323C;
+        background: var(--dark);
         box-shadow: 1px 1px 6px rgba(41, 38, 38, 0.767);
         display: flex;
         height: 70px;
@@ -148,12 +155,12 @@
         display: inline-block;
         height: auto;
         text-align: center;
-        transition: background 1s;
+        transition: background 0.5s;
         max-width: 150px;
     }
     
     .menu__item__link {
-        color: #CEE0DC;
+        color: var(--primary);
         cursor: pointer;
         display: block;
         height: auto;
@@ -192,7 +199,7 @@
     }
     
     .menu__item:hover .menu__subMenu__in__conteiner {
-        background-color: #B0B2B1;
+        background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
         max-width: 818px;
@@ -202,7 +209,7 @@
     }
     
     .menu__item:hover .menu__subMenu__out__conteiner {
-        background-color: #B0B2B1;
+        background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
         max-width: 818px;
@@ -213,7 +220,7 @@
     }
     
     .menu__item:hover .menu__subMenu__liberon {
-        background-color: #B0B2B1;
+        background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
         max-width: 818px;
@@ -224,20 +231,20 @@
     }
     
     .menu__subMenu {
-        box-shadow: 0 1px 5px rgba(41, 38, 38, 0.767);
+        box-shadow: var(--shadow);
         display: block;
     }
     
     .menu__subMenu__link:hover {
-        color: #CEE0DC;
+        color: var(--primary);
     }
     
     .menu__subMenu__link:hover .label-wraper-description {
-        color: #CEE0DC;
+        color: var(--primary);
     }
     
     .menu__subMenu__productsList__link:hover {
-        color: #CEE0DC;
+        color: var(--primary);
     }
     
     .menu__subMenu__item {
@@ -258,10 +265,11 @@
     }
     
     .menu__subMenu__link {
-        color: #19323C;
+        color: var(--dark);
         display: block;
         width: 243px;
         text-decoration: none;
+        transition: color 0.5s;
     }
     
     .menu__subMenu__productsList {
@@ -275,7 +283,7 @@
     }
     
     .menu__subMenu__productsList__link {
-        color: #435058;
+        color: var(--dark);
         display: block;
         font-size: 15px;
         padding: 10px;
@@ -321,41 +329,74 @@
     
     .product_box {
         display: block;
-        background-color: #19323C;
+        background-color: var(--dark);
         height: 200px;
         width: 100%;
-        box-shadow: 0 1px 5px rgba(41, 38, 38, 0.767);
+        box-shadow: var(--shadow);
     }
     
     .product_box--header {
-        color: rgb(202, 48, 48);
+        color: var(--active);
         display: block;
         height: 30%;
         margin-top: 10px;
         margin-bottom: 30px;
         text-align: center;
         text-transform: uppercase;
-        transition: color 1s;
+        transition: color 0.5s;
     }
     
     .product_box:hover .product_box--header {
-        color: #CEE0DC;
+        color: var(--primary);
     }
     
     .product_box--link {
+        display: block;
         text-decoration: none;
+        justify-items: center;
     }
     
     .product_box--paragraph {
-        color: #CEE0DC;
+        color: var(--primary);
         height: 50%;
         margin: auto;
         max-height: 80%;
         max-width: 80%;
     }
     
+    .product_box_image {
+        display: block;
+        background-color: var(--primary);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .product_box_image :hover {
+        box-shadow: var(--shadow);
+    }
+    
+    .product_box_image--header {
+        color: var(--dark);
+        display: block;
+        height: 30%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: color 0.5s;
+    }
+    
+    .product_box_image:hover .product_box_image--header {
+        color: var(--active);
+    }
+    
+    .product_box_image--image {
+        height: 200px;
+        text-align: center;
+    }
+    
     .prodocts_col_left--a {
-        grid-area: grid-area: products_col_left--a;
+        grid-area: products_col_left--a;
     }
     
     .prodocts_col_left--b {
@@ -369,6 +410,7 @@
     .products-inspiration-image {
         display: block;
         height: 350px;
+        min-height: 200px;
         margin: 0 20px;
         min-height: 250px;
         padding: 20px;
@@ -389,7 +431,7 @@
     }
     
     .products__main--paragraph {
-        color: #19323C;
+        color: var(--dark);
         display: block;
         font-size: 15px;
         margin: 0 auto;
@@ -397,7 +439,7 @@
     }
     
     .products__main--title {
-        color: #19323C;
+        color: var(--dark);
         display: block;
         padding: 20px;
         text-transform: uppercase;
