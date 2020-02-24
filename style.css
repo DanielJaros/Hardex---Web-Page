@@ -13,7 +13,7 @@
     }
     
     .active {
-        background-color: var(--active) color: #475B5A;
+        background-color: var(--active);
     }
     
     .aboutCompany {}
@@ -337,7 +337,7 @@
     
     .product_box--header {
         color: var(--active);
-        display: inline;
+        display: block;
         height: 30%;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -353,6 +353,7 @@
     
     .product_box--link {
         display: block;
+        height: 100%;
         text-decoration: none;
         align-items: center;
         justify-items: center;
@@ -371,9 +372,10 @@
         background-color: var(--primary);
         width: 100%;
         text-align: center;
+        box-shadow: none;
     }
     
-    .product_box_image :hover {
+    .product_box_image:hover {
         box-shadow: var(--shadow);
     }
     
@@ -464,8 +466,6 @@
     .stock {
         clear: both;
     }
-    
-    .stock__header {}
     
     .stock__link {
         color: #9B9B93;
