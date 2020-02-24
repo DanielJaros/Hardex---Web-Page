@@ -379,8 +379,7 @@
         color: var(--dark);
         display: block;
         height: 30%;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin: 10px 10px 30px 10px;
         text-align: center;
         text-transform: uppercase;
         transition: color 0.5s;
@@ -392,6 +391,7 @@
     
     .product_box_image--image {
         height: 200px;
+        padding: 10px 0;
         text-align: center;
     }
     
