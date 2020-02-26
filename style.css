@@ -133,7 +133,7 @@
     
     .menu__navigation__bar {
         background: var(--dark);
-        box-shadow: 1px 1px 6px rgba(41, 38, 38, 0.767);
+        box-shadow: 1px 1px 12px rgba(41, 38, 38, 0.767);
         display: flex;
         height: 70px;
         position: sticky;
@@ -202,32 +202,32 @@
         background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
-        max-width: 818px;
+        max-width: 1000px;
         position: absolute;
-        left: 2em;
-        right: 2em;
+        left: 1em;
+        right: 1em;
     }
     
     .menu__item:hover .menu__subMenu__out__conteiner {
         background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
-        max-width: 818px;
+        max-width: 1000px;
         width: auto;
         position: absolute;
-        left: 2em;
-        right: 2em;
+        left: 1em;
+        right: 1em;
     }
     
     .menu__item:hover .menu__subMenu__liberon {
         background-color: var(--subMenuBackground);
         display: inline;
         margin: 0 auto;
-        max-width: 818px;
+        max-width: 1000px;
         width: auto;
         position: absolute;
-        left: 2em;
-        right: 2em;
+        left: 1em;
+        right: 1em;
     }
     
     .menu__subMenu {
@@ -413,7 +413,7 @@
     
     .products-inspiration-image {
         display: block;
-        height: 350px;
+        height: 400px;
         min-height: 200px;
         margin: 0 20px;
         min-height: 250px;
