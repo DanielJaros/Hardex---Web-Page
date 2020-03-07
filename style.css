@@ -439,13 +439,13 @@
         display: block;
         font-size: 15px;
         margin: 0 auto;
-        padding: 10px 20px 10px;
+        padding: 0px 0px;
     }
     
     .products__main--title {
         color: var(--dark);
         display: block;
-        padding: 20px;
+        padding: 20px 0;
         text-transform: uppercase;
     }
     
@@ -459,7 +459,10 @@
             padding: 0;
         }
         .products__main--paragraph {
-            padding: 10px 20px 20px;
+            padding: 0px 20px;
+        }
+        .products__main--title {
+            padding: 20px 20px;
         }
     }
     
