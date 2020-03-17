@@ -60,6 +60,91 @@
         border-color: var(--active);
     }
     
+    .breadcrumb {
+        display: inline-block;
+        margin: 15px 10px 10px 20px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .breadcrumb-link {
+        background: transparent;
+        color: var(--dark);
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 19px;
+        outline: none;
+        padding: 0 30px 0 60px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .breadcrumb-link:first-child {
+        padding-left: 20px;
+    }
+    
+    .breadcrumb-link:first-child:before {
+        left: 14px;
+    }
+    
+    .breadcrumb-link:last-child {
+        padding-right: 20px;
+    }
+    
+    .breadcrumb-link-active {
+        color: var(--active);
+        font-weight: bold;
+    }
+    
+    .breadcrumb-link:hover {
+        background: var(--dark);
+        color: var(--primary);
+    }
+    
+    .breadcrumb-link-active {
+        background: var(--primary);
+        font-weight: bold;
+    }
+    
+    .breadcrumb-link-active:after {
+        background: var(--active);
+    }
+    
+    .breadcrumb-link:hover:after {
+        background: var(--dark);
+        color: var(--active);
+    }
+    
+    .breadcrumb-link:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -9px;
+        width: 21px;
+        height: 21px;
+        transform: scale(0.707) rotate(45deg);
+        z-index: 2;
+        background: var(--primary);
+        box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.0), 3px -3px 0 0.5px var(--dark);
+    }
+    
+    .breadcrumb a:last-child:after {
+        content: none;
+    }
+    
+    .breadcrumb a:last-child:before {
+        border-radius: 100%;
+        width: 40px;
+        height: 20px;
+        line-height: 20px;
+        margin: 8px 0;
+        position: absolute;
+        top: 0 left 30px;
+        background: var(--subMenuBackground);
+        font-weight: bold;
+    }
+    
     .header {
         background-color: var(--dark);
         height: 115px;
@@ -139,6 +224,7 @@
         position: sticky;
         top: 0;
         width: 100%;
+        z-index: 6;
     }
     
     .menu {
@@ -432,6 +518,7 @@
         display: grid;
         grid-gap: 20px;
         grid-template-areas: 'prodocts_col_left-a products_col_right' 'prodocts_col_left-b products_col_right';
+        margin: 20px;
     }
     
     .products__main--paragraph {
