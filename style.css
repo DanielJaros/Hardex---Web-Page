@@ -97,7 +97,7 @@
         font-weight: bold;
     }
     
-    .breadcrumb-link:hover {
+    .breadcrumb a:hover {
         background: var(--dark);
         color: var(--primary);
     }
@@ -107,11 +107,11 @@
         font-weight: bold;
     }
     
-    .breadcrumb-link-active:after {
+    .breadcrumb a:last-child:after {
         background: var(--active);
     }
     
-    .breadcrumb-link:hover:after {
+    .breadcrumb a:hover:after {
         background: var(--dark);
         color: var(--active);
     }
@@ -129,7 +129,7 @@
         box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.0), 3px -3px 0 0.5px var(--dark);
     }
     
-    .breadcrumb a:last-child:after {
+    .breadcrumb-link-active:after {
         content: none;
     }
     
