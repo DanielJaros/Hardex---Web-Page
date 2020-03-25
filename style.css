@@ -66,10 +66,10 @@
     
     .breadcrumb {
         display: inline-block;
-        margin: 20px 15%;
+        margin: 20px;
         overflow: hidden;
         z-index: 1;
-        width: 85%;
+        width: 100%;
     }
     
     .breadcrumb-link {
@@ -104,8 +104,7 @@
     }
     
     .breadcrumb a:hover {
-        background: var(--dark);
-        color: var(--primary);
+        text-decoration: underline;
     }
     
     .breadcrumb-link-active {
@@ -115,12 +114,6 @@
     
     .breadcrumb a:last-child:after {
         background: var(--active);
-    }
-    
-    .breadcrumb a:hover:after {
-        background: var(--dark);
-        color: var(--active);
-        transition: ease-in-out .5s;
     }
     
     .breadcrumb-link:after {
