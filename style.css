@@ -572,7 +572,7 @@
             justify-content: space-between;
             align-content: center;
             height: 80px;
-            margin: 10px 0;
+            margin: 10px 1% 14px 1%;
             max-width: 60px;
             min-width: 20px;
             width: 100%;
@@ -625,6 +625,19 @@
             justify-content: flex-end;
             width: 60%;
             margin-left: 3%;
+        }
+        
+        .productPage__col_right a {
+            color: var(--dark);
+            font-weight: bold;
+            text-decoration: none;
+            transition: .5s;
+            text-transform: uppercase;
+        }
+        
+        .productPage__col_right a:hover {
+            background: var(--active);
+            color: var(--primary);
         }
         
         .productPage__col_right p {
