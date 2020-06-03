@@ -43,6 +43,7 @@
             }
             
             .body__header--title {
+                display: flex;
                 align-self: flex-end;
                 width: fit-content;
                 font-size: 55px;
@@ -50,10 +51,10 @@
             }
             
             .body__logo__link {
-                display: flex;
                 box-sizing: content-box;
                 color: var(--primary);
                 font-weight: bold;
+                height: fit-content;
                 text-decoration: none;
                 transition: color 1s;
                 width: fit-content;
@@ -112,6 +113,43 @@
                 font-size: 14px;
             }
             
+            .hamburgerMenu--toggle {
+                align-self: center;
+                display: flex;
+                flex: .5;
+                justify-content: flex-end;
+            }
+            
+            .hamburgerMenu--bars {
+                background-color: var(--primary);
+                display: inline-block;
+                height: 5px;
+                width: 40px;
+                position: relative;
+                align-self: flex-end;
+            }
+            
+            .hamburgerMenu--bars::before,
+            .hamburgerMenu--bars::after {
+                background-color: var(--primary);
+                content: "";
+                display: inline-block;
+                height: 5px;
+                width: 40px;
+                position: relative;
+                align-self: flex-end;
+            }
+            
+            .hamburgerMenu--bars::before {
+                position: absolute;
+                top: 15px;
+            }
+            
+            .hamburgerMenu--bars::after {
+                position: absolute;
+                bottom: 15px;
+            }
+            
             .header {
                 display: flex;
                 background-color: var(--dark);
@@ -156,13 +194,17 @@
             
             .header__mail {
                 display: block;
-                align-self: flex-end;
-                margin-bottom: 9px;
+                align-self: center;
+                margin-right: 3px;
+            }
+            
+            .header__mail--link {
+                display: block;
+                height: 100%;
             }
             
             .header__mail--icon {
-                height: 55px;
-                margin-right: 3px;
+                height: 43px;
                 transition: .3s;
             }
             
@@ -174,9 +216,9 @@
                 display: flex;
                 justify-content: space-around;
                 max-width: 180px;
-                align-self: flex-end;
+                align-self: center;
                 justify-self: flex-end;
-                margin: 0 3% 15px 0;
+                margin-right: 3%;
                 transition: .3s;
             }
             
