@@ -8,6 +8,7 @@
     <title>Sklep Hardex - Strona firmy Hardex</title>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -25,14 +26,18 @@
                     <a href="mailto:someone@yoursite.com" class="header__mail--link"><img class="header__mail--icon" src="media/icons/email--active.png#CA3030" alt="Telephone icon" class="header__telephoneIcon"></a>
                 </div>
             </div>
-            <div class="hamburgerMenu--toggle"><span class="hamburgerMenu--bars"></span></div>
+            <div class="hamburgerMenu--conteiner">
+                <label class="hamburgerMenu--toggle" for="hamburgerMenu--btn"><span class="hamburgerMenu--bars"></span></label>
+
+            </div>
+
         </div>
     </header>
-
+    <input type="checkbox" class="hamburgerMenu--btn" id="hamburgerMenu--btn" />
     <nav class="menu__navigation__bar">
         <ul class="menu">
             <li class="menu__item"><a class="menu__item__link" href="o-firmie">O firmie</a></li>
-            <li class="menu__item menu__item--inProducts"><a class="menu__item__link" href="produkty-do-wewnatrz">Produkty 3V3 do wewnątrz</a>
+            <li class="menu__item menu__item--inProducts"><a class="menu__item__link" href="produkty-do-wewnatrz">Produkty 3V3 do wewnątrz <span class="fas fa-caret-down in"></span></a>
                 <div class="menu__subMenu__in__conteiner">
 
                     <ul class="menu__subMenu">
@@ -61,7 +66,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="menu__item"><a class="menu__item__link" href="produkty-na-zewnatrz">Produkty 3V3 na zewnątrz</a>
+            <li class="menu__item"><a class="menu__item__link" href="produkty-na-zewnatrz">Produkty 3V3 na zewnątrz<span class="fas fa-caret-down out"></span></a>
                 <div class="menu__subMenu__out__conteiner">
                     <ul class="menu__submenu">
                         <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="kategoria-produktow-v33/farby-2"><span class= label-wraper>Farby</span></a>
@@ -86,7 +91,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="menu__item"><a class="menu__item__link" href="liberon">Produkty Liberon</a>
+            <li class="menu__item"><a class="menu__item__link" href="liberon">Produkty Liberon <span class="fas fa-caret-down liberon"></span></a>
                 <div class="menu__subMenu__liberon">
                     <ul class="menu__submenu">
                         <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="kategoria-produktow-liberon/przygotowanie-drewna"><span class= label-wraper>Przygotowanie drewna</span></a>
@@ -108,6 +113,7 @@
             <li class="menu__item"><a class="menu__item__link" href="kontakt">Kontakt</a></li>
         </ul>
     </nav>
+
 
     <main class="main">
         <header class="main__header main__header--js">

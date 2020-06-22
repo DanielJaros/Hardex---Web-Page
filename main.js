@@ -34,3 +34,21 @@ a.innerHTML = 'Działa';
 */
 
 // Change background color of active link nav bar
+
+
+// Hamburger menu click listener
+
+$(document).ready(function() {
+    $('.hamburgerMenu--toggle').click(function() {
+        $('nav').toggleClass('menu__navigation__bar__active')
+    })
+});
+
+// Closing hamburgerMenu when click out of menu__navigationBar DIV !!!NIEDOKOŃCZONE!!!!
+/*
+$(document).on("click", function(e) {
+    if (
+        $(e.target).closest('nav').length == 0 &&
+        $(".menu__navigation__bar__active")
+    )
+});  */
