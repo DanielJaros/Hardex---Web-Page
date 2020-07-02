@@ -3,10 +3,11 @@
     $(this).css("background-color", "red")
 });
 */
-$(document).on('click', 'ul li', function() {
+
+/*$(document).on('click', 'ul li', function() {
     $(this).addClass('active')
 })
-
+*/
 console.log('siema');
 const name = 'Daniel Jaros';
 const age = 35;
@@ -41,8 +42,49 @@ a.innerHTML = 'Działa';
 $(document).ready(function() {
     $('.hamburgerMenu--toggle').click(function() {
         $('nav').toggleClass('menu__navigation__bar__active')
+
+    })
+    $('.in-products-btn').click(function() {
+        $('nav ul li .menu__subMenu__in__conteiner').toggleClass('menu__subMenu__in__conteiner__active')
+        $('nav ul .fa-caret-down-in').toggleClass('rotate')
+    })
+    $('.out-products-btn').click(function() {
+        $('nav ul li .menu__subMenu__out__conteiner').toggleClass('menu__subMenu__out__conteiner__active')
+        $('nav ul .out').toggleClass('rotate')
+    })
+    $('.liberon-products-btn').click(function() {
+        $('nav ul li .menu__subMenu__liberon').toggleClass('menu__subMenu__liberon__active')
+        $('nav ul .liberon').toggleClass('rotate')
     })
 });
+
+
+//Remove href from product buttons when mobile menu is on
+
+function checkPosition() {
+    if (x.matches) {
+        $('nav ul li .in-products-btn').removeAttr("href")
+        $('nav ul li .out-products-btn').removeAttr("href")
+        $('nav ul li .liberon-products-btn').removeAttr("href")
+
+
+
+    } else if (window.matchMedia('(min-width:866px)').matches) {
+        $('nav ul li .in-products-btn').attr('href', 'produkty-do-wewnatrz')
+        $('nav ul li .out-products-btn').attr('href', 'produkty-na-zewnatrz')
+        $('nav ul li .liberon-products-btn').attr('href', 'liberon')
+    }
+}
+var x = window.matchMedia('(max-width:865px)')
+checkPosition()
+x.addListener(checkPosition)
+
+// Addin active class to menu element of active page
+/* $('nav ul li').click(function() {
+    $(this).addClass("active").siblings().removeClass("active");
+})
+*/
+
 
 // Closing hamburgerMenu when click out of menu__navigationBar DIV !!!NIEDOKOŃCZONE!!!!
 /*
