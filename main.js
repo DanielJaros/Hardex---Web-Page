@@ -46,15 +46,15 @@ $(document).ready(function() {
     })
     $('.in-products-btn').click(function() {
         $('nav ul li .menu__subMenu__in__conteiner').toggleClass('menu__subMenu__in__conteiner__active')
-        $('nav ul .fa-caret-down-in').toggleClass('rotate')
+
     })
     $('.out-products-btn').click(function() {
         $('nav ul li .menu__subMenu__out__conteiner').toggleClass('menu__subMenu__out__conteiner__active')
-        $('nav ul .out').toggleClass('rotate')
+
     })
     $('.liberon-products-btn').click(function() {
         $('nav ul li .menu__subMenu__liberon').toggleClass('menu__subMenu__liberon__active')
-        $('nav ul .liberon').toggleClass('rotate')
+
     })
 });
 
@@ -66,7 +66,18 @@ function checkPosition() {
         $('nav ul li .in-products-btn').removeAttr("href")
         $('nav ul li .out-products-btn').removeAttr("href")
         $('nav ul li .liberon-products-btn').removeAttr("href")
+        $('.in-products-btn').click(function() {
 
+            $('nav ul .fa-caret-down-in').toggleClass('rotate')
+        })
+        $('.out-products-btn').click(function() {
+
+            $('nav ul .out').toggleClass('rotate')
+        })
+        $('.liberon-products-btn').click(function() {
+
+            $('nav ul .liberon').toggleClass('rotate')
+        })
 
 
     } else if (window.matchMedia('(min-width:866px)').matches) {

@@ -129,6 +129,7 @@
         width: 40px;
         position: relative;
         align-self: flex-end;
+        transition: background .2s;
     }
     
     .hamburgerMenu--bars::before,
@@ -140,6 +141,7 @@
         width: 40px;
         position: relative;
         align-self: flex-end;
+        transition: all .2s;
     }
     
     .hamburgerMenu--bars::before {
@@ -1144,6 +1146,15 @@
             left: 1em;
             right: 1em;
         }
+        .menu__item--inProducts:hover .fa-caret-down-in {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+        .menu__item--outProducts:hover .fa-caret-down.out {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+        .menu__item--liberonProducts:hover .fa-caret-down.liberon {
+            transform: translateY(-50%) rotate(-180deg);
+        }
     }
     /*Mobile menu*/
     
@@ -1197,15 +1208,18 @@
         .body__header--title {
             flex: 1;
         }
-        /* .hamburgerMenu--btn:checked~.menu__navigation__bar {
-        transition: height ease .3s;
-        height: 450px;
-    }
-    .hamburgerMenu--btn:not(:checked)~.menu__navigation__bar {
-        height: 0px;
-        transition: height .3s;
-    }
-    */
+        /* Hamburger Menu toggle transformation from bart to X */
+        .hamburgerMenu--btn:checked~.hamburgerMenu--toggle .hamburgerMenu--bars {
+            background: transparent;
+        }
+        .hamburgerMenu--btn:checked~.hamburgerMenu--toggle .hamburgerMenu--bars:before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+        .hamburgerMenu--btn:checked~.hamburgerMenu--toggle .hamburgerMenu--bars:after {
+            transform: rotate(45deg);
+            top: 0;
+        }
     }
     
     @media(max-width: 600px) {
