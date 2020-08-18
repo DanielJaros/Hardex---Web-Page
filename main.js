@@ -112,7 +112,11 @@ $(document).ready(function() {
     });
 });
 
+// Load nav-bar.html file to every pages
 
+$(function() {
+    $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
+});
 
 // Closing hamburgerMenu when click out of menu__navigationBar DIV !!!NIEDOKOŃCZONE!!!!
 /*

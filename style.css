@@ -545,7 +545,8 @@
     }
     
     .navigation__link--top {
-        border: solid 1px var(--dark);
+        border: solid 2px var(--dark);
+        border-radius: 3px;
         background: transparent;
         cursor: pointer;
         display: none;

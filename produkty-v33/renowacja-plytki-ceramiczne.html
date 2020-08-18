@@ -7,93 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sklep Hardex - Farba do renowacji płytek ceramicznych</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body class="body">
     <header id="Header" class="header">
-        <h1 class="body__header--title"><a title="Powrót do strony głównej" class="body__logo__link" href="../index">Hardex</a></h1>
-        <a class="header__v33__homepage__link" href="http://v33.pl" target="_blank"><img class="header__logo__v33__image" src="../media/logo-v33.png" alt="Logo 3V3" /></a>
+        <div class="header--conteiner">
+            <div class="body__header--title"><a title="Powrót do strony głównej" class="body__logo__link" href="index">Hardex</a></div>
+
+            <div class="header--contact">
+                <div class="header__telephone">
+                    <a href="tel:+48504272157" class="header__telephone--link"><img class="header__telephone--icon" src="http://localhost/Hardex-website/media/icons/phone-receiver-silhouette--active.png" alt="Telephone icon" class="header__telephoneIcon"><span>504 272 157</span></a>
+                </div>
+                <div class="header__mail">
+                    <a href="mailto:someone@yoursite.com" class="header__mail--link"><img class="header__mail--icon" src="http://localhost/Hardex-website/media/icons/email--active.png#CA3030" alt="Telephone icon" class="header__telephoneIcon"></a>
+                </div>
+            </div>
+            <div class="hamburgerMenu--conteiner">
+                <input type="checkbox" class="hamburgerMenu--btn" id="hamburgerMenu--btn" />
+                <label class="hamburgerMenu--toggle" for="hamburgerMenu--btn"><span class="hamburgerMenu--bars"></span></label>
+
+            </div>
+
+        </div>
     </header>
 
-    <nav class="menu__navigation__bar">
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__item__link" href="../o-firmie">O firmie</a></li>
-            <li class="menu__item menu__item--inProducts"><a class="menu__item__link" href="../produkty-do-wewnatrz">Produkty 3V3 do wewnątrz</a>
-                <div class="menu__subMenu__in__conteiner">
-
-                    <ul class="menu__subMenu">
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/farby"><span class= label-wraper>Farby</span></a>
-                            <div class="menu__subMenu_contener-1">
-                                <ul class="menu__subMenu__productsList">
-                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-biale">Farby białe (ściany i sufity)</a></li>
-
-                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsLis--active menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-renowacyjne">Farby renowacyjne</a></li>
-                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-do-podlog">Farby do podłóg</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/produkty-do-drewna"><span class= label-wraper>Produkty do drewna</span></a>
-                            <ul class="menu__subMenu__productsList">
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/oleje-meble-i-parkiety">Oleje (meble i parkiety)</a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/lakiery-meble-parkiety">Lakiery (meble i parkiety)</a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/bejce">Bejce</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/srodki-do-usuwania-powlok"><span class= label-wraper>Środki do usuwania powłok</span>
-                               <span class="label-wraper-description">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu__item"><a class="menu__item__link" href="../produkty-na-zewnatrz">Produkty 3V3 na zewnątrz</a>
-                <div class="menu__subMenu__out__conteiner">
-                    <ul class="menu__submenu">
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/farby-2"><span class= label-wraper>Farby</span></a>
-                            <ul class="menu__subMenu__productsList">
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-do-metalu"><span class= label-wraper>Farby do metalu</span></a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-wielopowierzchniowe"><span class= label-wraper>Farby wielopowierzchniowe</span></a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/farby-fasadowe"><span class= label-wraper>Farby fasadowe</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/produkty-do-drewna-2"><span class= label-wraper>Produkty do drewna</span></a>
-                            <ul class="menu__subMenu__productsList">
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/impregnaty"><span class= label-wraper>Impregnaty</span></a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/lazury"><span class= label-wraper>Lazury</span></a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/oleje-meble-ogrodowe-tarasy"><span class= label-wraper>Oleje (meble ogrodowe i tarasy)</span></a></li>
-                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="../kategoria-produktow-v33/lakiery"><span class= label-wraper>Lakiery</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-v33/srodki-do-usuwania-powlok-2"><span class= label-wraper>Środki do usuwania powłok</span>
-                            <span class="label-wraper-description"><span class="labelWrapper">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu__item"><a class="menu__item__link" href="../liberon">Produkty Liberon</a>
-                <div class="menu__subMenu__liberon">
-                    <ul class="menu__submenu">
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-liberon/przygotowanie-drewna"><span class= label-wraper>Przygotowanie drewna</span></a>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-liberon/barwienie-ochrona-drewna"><span class= label-wraper>Barwienie i ochrona drewna</span></a>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-liberon/woskowanie-drewna"><span class= label-wraper>Woskowanie derwna</span></a>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-liberon/renowacja-drewna"><span class= label-wraper>Renowacja drewna</span></a>
-                        </li>
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="../kategoria-produktow-liberon/produkty-do-zlocenia-drewna"><span class= label-wraper>Produkty do złocenia drewna</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu__item"><a class="menu__item__link" href="../promocje">Promocje</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="../zamawianie">Jak zamawiać?</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="../dostawa">Dostawa</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="../kontakt">Kontakt</a></li>
-        </ul>
-    </nav>
+    <div class="conteiner-nav" id="conteiner-nav"></div>
     <div class="breadcrumb">
         <a href="../produkty-do-wewnatrz" class="breadcrumb-link">Produkty do wewnątrz</a><span>/</span>
         <a href="../kategoria-produktow-v33/farby" class="breadcrumb-link">Farby</a><span>/</span>
@@ -239,7 +181,12 @@
     <footer class="footer ">
         Strona firmy Hardex PHU - hurtowni produktów firmy 3V3
     </footer>
-    <script src="../main.js "></script>
+    <script src="../main.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
+        });
+    </script>
 </body>
 
 </html>
