@@ -17,7 +17,7 @@ ${age}`);
 console.log(`Nazywam się ${name} i mam ${age} lat`);
 
 // DOM document.querySelector();
-
+/*
 const header = document.querySelector('.main__header');
 console.log(header);
 
@@ -26,7 +26,7 @@ console.log(paragraphs);
 
 const whereHeader = document.querySelector('.section__header');
 console.log(header.innerHTML);
-
+*/
 // podmienianie tekstu na stronie NIEDZIAŁA!!!!!!!!!!!!!!!!!!
 
 /* 
@@ -34,8 +34,12 @@ const a = document.querySelector('.main__header__paragraph');
 a.innerHTML = 'Działa';
 */
 
-// Change background color of active link nav bar
+// Load nav-bar.html file to every pages
 
+/*$(function() {
+    $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
+});
+*/
 
 // Hamburger menu click listener
 
@@ -64,7 +68,7 @@ $(document).ready(function() {
 
 function checkPosition() {
     if (x.matches) {
-        $('nav ul li .in-products-btn').removeAttr("href")
+        $('#in-products-btn').removeAttr("href")
         $('nav ul li .out-products-btn').removeAttr("href")
         $('nav ul li .liberon-products-btn').removeAttr("href")
         $('.in-products-btn').click(function() {
@@ -86,15 +90,20 @@ function checkPosition() {
         $('nav ul li .out-products-btn').attr('href', 'produkty-na-zewnatrz')
         $('nav ul li .liberon-products-btn').attr('href', 'liberon')
 
-        // Addin active class to menu element of active page
+        // Add active class to menu element of active page
         $('nav ul li').click(function() {
             $(this).addClass("active").siblings().removeClass("active");
         })
     }
 }
-var x = window.matchMedia('(max-width:865px)')
+var x = window.matchMedia('(max-width:865px)');
 checkPosition()
-x.addListener(checkPosition)
+x.addListener(checkPosition);
+
+// Add active class to menu element of active page
+$('nav ul li').click(function() {
+    $(this).addClass("active").siblings().removeClass("active");
+});
 
 /*Arrow UP display after scroll down */
 
@@ -112,11 +121,6 @@ $(document).ready(function() {
     });
 });
 
-// Load nav-bar.html file to every pages
-
-$(function() {
-    $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
-});
 
 // Closing hamburgerMenu when click out of menu__navigationBar DIV !!!NIEDOKOŃCZONE!!!!
 /*
