@@ -38,11 +38,11 @@
     <nav id="nav" class="menu__navigation__bar">
         <ul class="menu">
             <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/o-firmie">O firmie</a></li>
-            <li class="menu__item menu__item--inProducts"><a id="in-products-btn" class="menu__item__link in-products-btn" href="http://localhost/Hardex-website/produkty-do-wewnatrz">Produkty 3V3 do wewnątrz<span class="fas fa-caret-down fa-caret-down-in"></span></a>
+            <li class="menu__item menu__item--inProducts"><a id="in-products-btn" class="menu__item__link in-products-btn" href="/produkty-do-wewnatrz">Produkty 3V3 do wewnątrz<span class="fas fa-caret-down fa-caret-down-in"></span></a>
                 <div class="menu__subMenu__in__conteiner">
 
                     <ul class="menu__subMenu">
-                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby"><span class= label-wraper>Farby</span></a>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner menu__subMenu--active"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby"><span class="label-wraper " >Farby</span></a>
                             <div class="menu__subMenu_contener-1">
                                 <ul class="menu__subMenu__productsList">
                                     <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-biale">Farby białe (ściany i sufity)</a></li>
@@ -152,17 +152,19 @@
                 </a>
             </div>
         </div>
+        <p id="test"></p>
         <div id="topBtn" class="navigation__link--top"><img class="navigation__link--top_image" src="media/icons/navigate-up-arrow.png" alt="Strzałka do góry"></div>
     </main>
     <footer class="footer">
         Strona firmy Hardex PHU - hurtowni produktów firmy 3V3
     </footer>
-    <script src="main.js"></script>
+    <script src="http://localhost/Hardex-website/main.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
         });
     </script>
+
 </body>
 
 </html>

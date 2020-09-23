@@ -41,6 +41,8 @@ a.innerHTML = 'Działa';
 });
 */
 
+
+
 // Hamburger menu click listener
 
 $(document).ready(function() {
@@ -86,27 +88,52 @@ function checkPosition() {
 
 
     } else if (window.matchMedia('(min-width:866px)').matches) {
-        $('nav ul li .in-products-btn').attr('href', 'produkty-do-wewnatrz')
-        $('nav ul li .out-products-btn').attr('href', 'produkty-na-zewnatrz')
-        $('nav ul li .liberon-products-btn').attr('href', 'liberon')
+        $('nav ul li .in-products-btn').attr('href', 'http://localhost/Hardex-website/produkty-do-wewnatrz')
+        $('nav ul li .out-products-btn').attr('href', 'http://localhost/Hardex-website/produkty-na-zewnatrz')
+        $('nav ul li .liberon-products-btn').attr('href', 'http://localhost/Hardex-website/liberon')
 
         // Add active class to menu element of active page
-        $('nav ul li').click(function() {
-            $(this).addClass("active").siblings().removeClass("active");
-        })
+
     }
 }
 var x = window.matchMedia('(max-width:865px)');
 checkPosition()
 x.addListener(checkPosition);
 
-// Add active class to menu element of active page
-$('nav ul li').click(function() {
-    $(this).addClass("active").siblings().removeClass("active");
+/* Add active class to menu element of active menu page */
+
+$(function() {
+    setMenuLinkActive();
 });
 
-/*Arrow UP display after scroll down */
+function setMenuLinkActive() {
+    $('.menu li a').filter(function() {
+        return this.href === location.href;
+    }).closest('.menu__item').addClass('active');
+}
 
+/* Add active class to menu element of active sub__menu page */
+$(function() {
+    setSubMenuLinkActive();
+    setLabelWrapperActive(); //Function to set active description of last SubMenu Link
+});
+
+function setSubMenuLinkActive() {
+    $('.menu__subMenu li a').filter(function() {
+        return this.href === location.href;
+    }).addClass('menu__subMenu__productsList__link--active');
+}
+
+function setLabelWrapperActive() {
+    $('.menu__subMenu li a').filter(function() {
+        return this.href === location.href;
+    }).children().addClass('menu__subMenu__productsList__link--active');
+}
+
+/* Add active class to menu element of active sub__menu page */
+
+
+/*Arrow UP display after scroll down */
 
 $(document).ready(function() {
     $(window).scroll(function() {

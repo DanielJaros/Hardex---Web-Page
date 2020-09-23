@@ -526,6 +526,10 @@
         ;
     }
     
+    .menu__subMenu__productsList__link--active {
+        color: var(--primary);
+    }
+    
     .menu__subMenu__productsLis--active {
         color: var(--primary);
     }
@@ -582,7 +586,7 @@
         grid-gap: 2%;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         margin: 10px auto;
-        padding: 0 2%;
+        padding: 0 0;
         width: 100%;
         align-items: center;
         justify-self: center;
@@ -697,6 +701,7 @@
         color: var(--dark);
         display: block;
         font-size: 1rem;
+        max-height: 220px;
         margin: 0 auto;
     }
     
@@ -1034,6 +1039,10 @@
         bottom: 0%;
     }
     
+    .wordBreakPreparation {
+        display: none;
+    }
+    
     @media (max-width: 977px) and (min-width: 874px) {
         .new-line {
             display: inline-block;
@@ -1060,15 +1069,19 @@
         .products__main--paragraph {
             margin: 0 auto;
             padding: 0 0 10% 0;
+            max-width: 430px;
         }
         .products__main--title {
             padding: 2rem 0;
             margin: 0 auto;
-            max-width: 420px;
+            max-width: 430px;
             width: 100%;
         }
         .new-line-next {
             display: inline;
+        }
+        .products_box--conteiner {
+            max-width: 430px;
         }
     }
     
@@ -1101,6 +1114,9 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 20px;
+        }
+        .wordBreakPreparation {
+            display: inline;
         }
     }
     
@@ -1189,6 +1205,12 @@
             transform: translateY(-50%) rotate(-180deg);
         }
     }
+    
+    @media (max-width:522px) {
+        .products-inspiration-image {
+            width: 100%;
+        }
+    }
     /*Mobile menu*/
     
     @media (min-width: 866px) {
@@ -1198,6 +1220,10 @@
     }
     
     @media (max-width: 865px) {
+        .header {
+            position: sticky;
+            top: 0;
+        }
         .menu {
             flex-direction: column;
             justify-content: flex-start;
