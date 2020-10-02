@@ -101,15 +101,33 @@ checkPosition()
 x.addListener(checkPosition);
 
 /* Add active class to menu element of active menu page */
-
 $(function() {
     setMenuLinkActive();
 });
 
+var firstChildBreadcrumbHref = $('.breadcrumb').find('a:first').attr('href');
+
+
 function setMenuLinkActive() {
-    $('.menu li a').filter(function() {
-        return this.href === location.href;
-    }).closest('.menu__item').addClass('active');
+    var ElementIsHrefEqualToLocal = [];
+
+    ElementIsHrefEqualToLocal = $('.menu li a').filter(function() {
+        return this.href === location.href
+    });
+
+    if (typeof ElementIsHrefEqualToLocal != "undefined" && ElementIsHrefEqualToLocal != null && ElementIsHrefEqualToLocal.length != null && ElementIsHrefEqualToLocal.length > 0) {
+        $('.menu li a').filter(function() {
+            return this.href === location.href;
+        }).closest('.menu__item').addClass('active');
+
+    } else {
+
+        $('.menu li a').filter(function() {
+            return this.href === firstChildBreadcrumbHref;
+        }).closest('.menu__item').addClass('active');
+
+    }
+
 }
 
 /* Add active class to menu element of active sub__menu page */
@@ -118,20 +136,67 @@ $(function() {
     setLabelWrapperActive(); //Function to set active description of last SubMenu Link
 });
 
+var lastChildBreadcrumbHref = $('.breadcrumb').find('a:last').attr('href');
+
 function setSubMenuLinkActive() {
-    $('.menu__subMenu li a').filter(function() {
+    var SubMenuElementIsHrefEqualToLocal = [];
+
+    SubMenuElementIsHrefEqualToLocal = $('.menu__subMenu li a').filter(function() {
         return this.href === location.href;
-    }).addClass('menu__subMenu__productsList__link--active');
+    });
+
+    if (typeof SubMenuElementIsHrefEqualToLocal != "undefined" && SubMenuElementIsHrefEqualToLocal != null && SubMenuElementIsHrefEqualToLocal.length != null && SubMenuElementIsHrefEqualToLocal.length > 0) {
+
+        $('.menu__subMenu li a').filter(function() {
+            return this.href === location.href;
+        }).addClass('menu__subMenu__productsList__link--active');
+    } else {
+
+        $('.menu__subMenu li a').filter(function() {
+            return this.href === lastChildBreadcrumbHref;
+        }).addClass('menu__subMenu__productsList__link--active');
+
+    }
 }
 
 function setLabelWrapperActive() {
     $('.menu__subMenu li a').filter(function() {
         return this.href === location.href;
     }).children().addClass('menu__subMenu__productsList__link--active');
+};
+
+/* Add at active Product page active class to menu and submenu element which contei this product  
+
+$(function() {
+    setMenuLinkActiveAtProductPage();
+    setSubMenuLinkActiveAtProductPage();
+});
+
+var firstChildBreadcrumbHref = $('.breadcrumb').find('a:first').attr('href');
+var lastChildBreadcrumbHref = $('.breadcrumb').find('a:last').attr('href');
+console.log(firstChildBreadcrumbHref);
+
+function setMenuLinkActiveAtProductPage() {
+    $('.menu li a').each(function() {
+        if (this.href !== location.href) {
+            $('.menu li a').filter(function() {
+                return this.href === firstChildBreadcrumbHref;
+            }).closest('.menu__item').addClass('active');
+        }
+    });
+    console.log($('.menu li a'));
 }
 
-/* Add active class to menu element of active sub__menu page */
-
+function setSubMenuLinkActiveAtProductPage() {
+    $('.menu li a').each(function() {
+        if (this.href !== location.href) {
+            $('.menu__subMenu li a').filter(function() {
+                return this.href === lastChildBreadcrumbHref;
+            }).addClass('menu__subMenu__productsList__link--active');
+        }
+    });
+}
+*/
 
 /*Arrow UP display after scroll down */
 
@@ -156,4 +221,5 @@ $(document).on("click", function(e) {
         $(e.target).closest('nav').length == 0 &&
         $(".menu__navigation__bar__active")
     )
-});  */
+});  
+*/
