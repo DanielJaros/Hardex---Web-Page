@@ -99,6 +99,7 @@
     .breadcrumb-link-active {
         color: var(--active);
         font-weight: bold;
+        z-index: 1;
     }
     
     .breadcrumb a:hover {
@@ -193,6 +194,7 @@
         padding: 0 4%;
         margin: 0 auto;
         width: 100%;
+        z-index: 4;
     }
     
     .header--conteiner {
