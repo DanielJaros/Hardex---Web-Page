@@ -292,6 +292,7 @@
     
     .label-wraper {
         display: block;
+        width: 100%;
     }
     
     .label-wraper-description {
@@ -484,11 +485,7 @@
         display: flex;
         font-size: 20px;
         list-style: none;
-        padding: 2%;
-    }
-    
-    .menu__subMenu__item:last-child {
-        padding-right: 20px;
+        margin: 2%;
     }
     
     .menu__subMenu__item--conteiner {
