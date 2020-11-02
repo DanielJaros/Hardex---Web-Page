@@ -107,7 +107,6 @@ $(function() {
 
 var firstChildBreadcrumbHref = $('.breadcrumb').find('a:first').attr('href');
 
-
 function setMenuLinkActive() {
     var ElementIsHrefEqualToLocal = [];
 
