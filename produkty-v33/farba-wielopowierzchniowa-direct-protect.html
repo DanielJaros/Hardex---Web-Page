@@ -1,0 +1,356 @@
+<!DOCTYPE html5>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sklep Hardex - Farba na różne powierzchnie direct protect</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="body">
+    <header id="Header" class="header">
+        <div class="header--conteiner">
+            <div class="body__header--title"><a title="Powrót do strony głównej" class="body__logo__link" href="http://localhost/Hardex-website/index">Hardex</a></div>
+
+            <div class="header--contact">
+                <div class="header__telephone">
+                    <a href="tel:+48504272157" class="header__telephone--link"><img class="header__telephone--icon" src="http://localhost/Hardex-website/media/icons/phone-receiver-silhouette--active.png" alt="Telephone icon" class="header__telephoneIcon"><span>504 272 157</span></a>
+                </div>
+                <div class="header__mail">
+                    <a href="mailto:someone@yoursite.com" class="header__mail--link"><img class="header__mail--icon" src="http://localhost/Hardex-website/media/icons/email--active.png#CA3030" alt="Telephone icon" class="header__telephoneIcon"></a>
+                </div>
+            </div>
+            <div class="hamburgerMenu--conteiner">
+                <input type="checkbox" class="hamburgerMenu--btn" id="hamburgerMenu--btn" />
+                <label class="hamburgerMenu--toggle" for="hamburgerMenu--btn"><span class="hamburgerMenu--bars"></span></label>
+
+            </div>
+
+        </div>
+    </header>
+
+    <nav id="nav" class="menu__navigation__bar">
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/o-firmie">O firmie</a></li>
+            <li class="menu__item menu__item--inProducts"><a id="in-products-btn" class="menu__item__link in-products-btn" href="http://localhost/Hardex-website/produkty-do-wewnatrz">Produkty 3V3 do wewnątrz<span class="fas fa-caret-down fa-caret-down-in"></span></a>
+                <div class="menu__subMenu__in__conteiner">
+
+                    <ul class="menu__subMenu">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby"><span class= label-wraper>Farby</span></a>
+                            <div class="menu__subMenu_contener-1">
+                                <ul class="menu__subMenu__productsList">
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-biale">Farby białe (ściany i sufity)</a></li>
+
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-renowacyjne">Farby renowacyjne</a></li>
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-do-podlog">Farby do podłóg</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/produkty-do-drewna"><span class= label-wraper>Produkty do drewna</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/oleje-meble-i-parkiety">Oleje (meble i parkiety)</a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lakiery-meble-parkiety">Lakiery (meble i parkiety)</a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/bejce">Bejce</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/srodki-do-usuwania-powlok"><span class= label-wraper>Środki do usuwania powłok</span>
+                           <span class="label-wraper-description">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item menu__item--outProducts"><a class="menu__item__link  out-products-btn" href="http://localhost/Hardex-website/produkty-na-zewnatrz">Produkty 3V3 na zewnątrz<span class="fas fa-caret-down out"></span></a>
+                <div class="menu__subMenu__out__conteiner">
+                    <ul class="menu__submenu">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-2"><span class= label-wraper>Farby</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-do-metalu"><span class= label-wraper>Farby do metalu</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-wielopowierzchniowe"><span class= label-wraper>Farby wielopowierzchniowe</span></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/produkty-do-drewna-2"><span class= label-wraper>Produkty do drewna</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/impregnaty"><span class= label-wraper>Impregnaty</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lazury"><span class= label-wraper>Lazury</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/oleje-meble-ogrodowe-tarasy"><span class= label-wraper>Oleje (meble ogrodowe i tarasy)</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lakiery"><span class= label-wraper>Lakiery</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/srodki-do-usuwania-powlok-2"><span class= label-wraper>Środki do usuwania powłok</span>
+                        <span class="label-wraper-description"><span class="labelWrapper">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span></span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item menu__item--liberonProducts"><a class="menu__item__link liberon-products-btn" href="http://localhost/Hardex-website/liberon">Produkty Liberon <span class="fas fa-caret-down liberon"></span></a>
+                <div class="menu__subMenu__liberon">
+                    <ul class="menu__submenu menu__submenu--liberon">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/przygotowanie-drewna"><span class= label-wraper>Przygotowanie drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/barwienie-ochrona-drewna"><span class= label-wraper>Barwienie i ochrona drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/woskowanie-drewna"><span class= label-wraper>Woskowanie derwna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/renowacja-drewna"><span class= label-wraper>Renowacja drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/produkty-do-zlocenia-drewna"><span class= label-wraper>Produkty do złocenia drewna</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/promocje">Promocje</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/zamawianie">Jak zamawiać?</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/dostawa">Dostawa</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="breadcrumb">
+        <a href="http://localhost/Hardex-website/produkty-na-zewnatrz" class="breadcrumb-link">Produkty na zewewnątrz</a><span>/</span>
+        <a href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-2" class="breadcrumb-link">Farby</a><span>/</span>
+        <a href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-wielopowierzchniowe" class="breadcrumb-link">Farby wielopowierzchniowe</a><span>/</span>
+        <span class="breadcrumb-link-active breadcrumb-link">Farba na różne powierzchnie direct protect</span>
+    </div>
+    <main class="products__main--conteiner">
+
+        <div class="productPage__main">
+            <div class="productPage__row">
+                <div class="productPage__col_left">
+                    <div class="prodoctPage_title">
+                        <h1>Farba na różne powierzchnie direct protect
+                        </h1>
+                    </div>
+                    <img src="../media/products/farba-na-różne-powierzchnie-direct-protect.png" alt="Farba na różne powierzchnie direct protect 3V3" class="productPage_image">
+                </div>
+                <div class="productPage__col_right">
+                    <p>Farba na różne powierzchnie direct protect 3V3 to znakomite, szybkie i proste rozwiązanie do odnawiania i koloryzowania każdego rodzaju powierzchni, bez warstwy podkładowej, na każdy materiał metal, drewno, plastik, PCV, aluminium,
+                        ocynk. </p>
+
+                    <div class="productPage_price">
+
+                        <div class="productPage_price--title">CENY:</div>
+                        <div class="productPage_price--fromCapacity">
+                            <span>0,75l / 100 zł</span>
+                            <span>2,5l / 100 zł</span>
+                        </div>
+                    </div>
+                    <div class="productPage__button--technical-specification-link"><a href="https://www.v33.pl/wp-content/uploads/2018/04/dpd044-technical-file-farba-na-r%C3%B3%C5%BCne-powierzchnie-direct-protect-V33.pdf" target="_blank">Specyfikacja techniczna</a></div>
+                </div>
+            </div>
+
+            <div class="productPage__colors--conteiner">
+                <h2>Kolory</h2>
+                <div class="productPage__colors--boxes">
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/biały.jpg" alt="Kolor Biały"></div>
+                        <div class="productPage__colors--description">Biały</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/kremowy-połysk.jpg" alt="Kolor Kremowy"></div>
+                        <div class="productPage__colors--description">Kremowy</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/taupe.jpg" alt="Kolor Taupe"></div>
+                        <div class="productPage__colors--description">Taupe</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/ciemny-brąz.jpg" alt="Kolor Ciemny Brąz"></div>
+                        <div class="productPage__colors--description">Ciemny Brąz</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/szary-alpejski.jpg" alt="Kolor Szary ajpejski"></div>
+                        <div class="productPage__colors--description">Szary ajpejski</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/antracyt.jpg" alt="Kolor Antracyt"></div>
+                        <div class="productPage__colors--description">Antracyt</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/słoneczny.jpg" alt="Kolor Słoneczny"></div>
+                        <div class="productPage__colors--description">Słoneczny</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/papryka.jpg" alt="Kolor Papryka"></div>
+                        <div class="productPage__colors--description">Papryka</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/błękit-atlantycki.jpg" alt="Kolor Błękit atlantycki"></div>
+                        <div class="productPage__colors--description">Błękit atlantycki</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/zielony-baskijski.jpg" alt="Kolor Zielony baskijski"></div>
+                        <div class="productPage__colors--description">Zielony baskijski</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/czerwony-baskijski.jpg" alt="Kolor Czerwony baskijski"></div>
+                        <div class="productPage__colors--description">Czerwony baskijski</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/czarny.jpg" alt="Kolor Czarny"></div>
+                        <div class="productPage__colors--description">Czarny</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/metaliczny-brąz.jpg" alt="Kolor Metaliczny brąz"></div>
+                        <div class="productPage__colors--description">Metaliczny brąz</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/aluminium.jpg" alt="Kolor Aluminium"></div>
+                        <div class="productPage__colors--description">Aluminium</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/metaliczny-antracyt.jpg" alt="Kolor Metaliczny antracyt"></div>
+                        <div class="productPage__colors--description">Metaliczny antracyt</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/szary-alpejski-piaskowy.jpg" alt="Kolor Szary alpejski piaskowy"></div>
+                        <div class="productPage__colors--description">Szary alpejski piaskowy</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/antracyt-piaskowy.jpg" alt="Kolor Antracyt piaskowy"></div>
+                        <div class="productPage__colors--description">Antracyt piaskowy</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/czarny-piaskowy.jpg" alt="Kolor Czarny piaskowy"></div>
+                        <div class="productPage__colors--description">Czarny piaskowy</div>
+                    </div>
+                </div>
+
+                <div class="productPage__colors--message">
+                    <p><span>Przeczytaj! </span>Przedstawione powyżej kolory dosyć wiernie przedstawiają rzeczywiste kolory produktu, jednak należy, mimo wszystko traktować je jako poglądowe.</p>
+                </div>
+            </div>
+
+            <div class="productPage--description">
+                <div class="productPage__properties-destiny--conteiner">
+
+                    <div class="productPage__properties-destiny--content">
+                        <div class="productPage__properties-destiny">
+                            <h2>Właściwości i przeznaczenie</h2>
+                            <article>
+                                <p>Direct Protect to farba na prawie wszystkie powierzchnie (metal, drewno, PCV, aluminium, ocynk).</p>
+                                <p>Można ją stosować w wewnątrz i na zewnątrz. Doskonała przyczepność i łatwa aplikacja. 2w1 nie wymaga stosowania podkładu, bezpośrednio na powierzchnię. </p>
+                                <p>Wysoka odporność na warunki pogodowe: mróz, opady, promieniowanie UV.</p>
+                            </article>
+                        </div>
+
+                        <div class="productPage__product-label">
+                            <h3>Wykończenie: SATYNA, METALICYNY, PIASKOWY</h3>
+                            <h3>Czas między warstwami: 24 H</h3>
+                            <h3>Wydajność: 12M2</h3>
+                            <h3>Pojemność: 0,75L, 2,5L</h3>
+                            <h3>Czyszczenie narzędzi: BENYZNA LAKOWA</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <article>
+                        <h2>Zastosowanie</h2>
+                        <section>
+                            <h3>Przygotowanie podłoża</h3>
+
+                            <h4>Podłoża surowe lub nowe:</h4>
+                            <ul>
+                                <li>
+                                    drewno: <br> delikatnie przeszlifować papierem ściernym i odpylić. Drewno egzotyczne należy odtłuścić acetonem
+                                </li>
+                                <li>
+                                    metal:<br> nowe powierzchnie metalowe odtłuścić acetonem. Powierzchnie zardzewiałe oczyścić szczotką metalową aby usunąć luźne elementy rdzy i odpylić
+                                </li>
+                                <li>
+                                    PCV – aluminium – ocynk – miedź- powłoki galwaniczne:<br> delikatnie przeszlifować papierem ściernym 150, dokładnie oczyścić i odtłuścić, a następnie spłukać
+                                </li>
+                            </ul>
+
+
+                            <h4>Podłoża wcześniej malowane, pokryte lazurą lub lakierem, w dobrym stanie:</h4>
+                            <ul>
+                                <li>
+                                    drewno – metal: <br> drewno – metal: delikatnie przeszlifować papierem ściernym (120) i odpylić
+                                </li>
+                                <li>
+                                    PCV – aluminium – ocynk – miedź- powłoki galwaniczne: <br> delikatnie przeszlifować papierem ściernym 150, dokładnie oczyścić i odtłuścić, a następnie spłukać
+                                </li>
+                            </ul>
+
+                            <h4>Podłoża wcześniej malowane, pokryte lazurą lub lakierem, w złym stanie:</h4>
+                            <ul>
+                                <li>
+                                    drewno: <br> zeszlifować łuszczące się elementy farby, przeszlifować i odpylić
+                                </li>
+                                <li>metal: <br> zeszlifować łuszczące się elementy farby i rdzy, a następnie dokładnie oczyścić , odtłuścić i spłukać wodą</li>
+                                <li>
+                                    PCV – aluminium – ocynk – miedź- powłoki galwaniczne:<br> delikatnie przeszlifować papierem ściernym 150, dokładnie oczyścić i odtłuścić, a następnie spłukać
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>Aplikacja</h3>
+                            <p>Przed i podczas malowania Farbę na różne powierzchnie Direct Protect 3V3 należy wymieszać za pomocą szerokiego mieszadła, sięgając do dna pojemnika w celu ujednolicenia konsystencji.</p>
+                            <ol>
+                                <li>Rozpocząć malowanie od narożników i krawędzi.</li>
+                                <li>Malować regularnymi, krzyżującymi się pasami, unikając nakładania zbyt grubych warstw.</li>
+                                <li>Pozostawić do wyschnięcia na 24 godziny. Delikatnie przeszlifować i odpylić. Nałożyć drugą warstwę farby w ten sam sposób.</li>
+                            </ol>
+                            <p>Farba gotowa do użycia, nie rozcieńczać
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Porady</h3>
+                            <p>W przypadku żywych, intensywnych kolorów może być konieczne nałożenie dodatkowej warstwy farby.
+                            </p>
+                            <p>Ostateczne właściwości i odporność powłoka uzyskuje po 15 dniach od wyschnięcia.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+        <div id="topBtn" class="navigation__link--top"><img class="navigation__link--top_image" src="http://localhost/Hardex-website/media/icons/navigate-up-arrow.png" alt="Strzałka do góry"></div>
+    </main>
+    <footer class="footer ">
+        Strona firmy Hardex PHU - hurtowni produktów firmy 3V3
+    </footer>
+    <script src="../main.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
+        });
+    </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html5>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sklep Hardex - Farba do metalu bezpośrednio na rdzę piaskowa</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="body">
+    <header id="Header" class="header">
+        <div class="header--conteiner">
+            <div class="body__header--title"><a title="Powrót do strony głównej" class="body__logo__link" href="http://localhost/Hardex-website/index">Hardex</a></div>
+
+            <div class="header--contact">
+                <div class="header__telephone">
+                    <a href="tel:+48504272157" class="header__telephone--link"><img class="header__telephone--icon" src="http://localhost/Hardex-website/media/icons/phone-receiver-silhouette--active.png" alt="Telephone icon" class="header__telephoneIcon"><span>504 272 157</span></a>
+                </div>
+                <div class="header__mail">
+                    <a href="mailto:someone@yoursite.com" class="header__mail--link"><img class="header__mail--icon" src="http://localhost/Hardex-website/media/icons/email--active.png#CA3030" alt="Telephone icon" class="header__telephoneIcon"></a>
+                </div>
+            </div>
+            <div class="hamburgerMenu--conteiner">
+                <input type="checkbox" class="hamburgerMenu--btn" id="hamburgerMenu--btn" />
+                <label class="hamburgerMenu--toggle" for="hamburgerMenu--btn"><span class="hamburgerMenu--bars"></span></label>
+
+            </div>
+
+        </div>
+    </header>
+
+    <nav id="nav" class="menu__navigation__bar">
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/o-firmie">O firmie</a></li>
+            <li class="menu__item menu__item--inProducts"><a id="in-products-btn" class="menu__item__link in-products-btn" href="http://localhost/Hardex-website/produkty-do-wewnatrz">Produkty 3V3 do wewnątrz<span class="fas fa-caret-down fa-caret-down-in"></span></a>
+                <div class="menu__subMenu__in__conteiner">
+
+                    <ul class="menu__subMenu">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby"><span class= label-wraper>Farby</span></a>
+                            <div class="menu__subMenu_contener-1">
+                                <ul class="menu__subMenu__productsList">
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-biale">Farby białe (ściany i sufity)</a></li>
+
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-renowacyjne">Farby renowacyjne</a></li>
+                                    <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-do-podlog">Farby do podłóg</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/produkty-do-drewna"><span class= label-wraper>Produkty do drewna</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/oleje-meble-i-parkiety">Oleje (meble i parkiety)</a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lakiery-meble-parkiety">Lakiery (meble i parkiety)</a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/bejce">Bejce</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/srodki-do-usuwania-powlok"><span class= label-wraper>Środki do usuwania powłok</span>
+                           <span class="label-wraper-description">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item menu__item--outProducts"><a class="menu__item__link  out-products-btn" href="http://localhost/Hardex-website/produkty-na-zewnatrz">Produkty 3V3 na zewnątrz<span class="fas fa-caret-down out"></span></a>
+                <div class="menu__subMenu__out__conteiner">
+                    <ul class="menu__submenu">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-2"><span class= label-wraper>Farby</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-do-metalu"><span class= label-wraper>Farby do metalu</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-wielopowierzchniowe"><span class= label-wraper>Farby wielopowierzchniowe</span></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/produkty-do-drewna-2"><span class= label-wraper>Produkty do drewna</span></a>
+                            <ul class="menu__subMenu__productsList">
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/impregnaty"><span class= label-wraper>Impregnaty</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lazury"><span class= label-wraper>Lazury</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/oleje-meble-ogrodowe-tarasy"><span class= label-wraper>Oleje (meble ogrodowe i tarasy)</span></a></li>
+                                <li class="menu__subMenu__productsList__item"><a class="menu__subMenu__productsList__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/lakiery"><span class= label-wraper>Lakiery</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-v33/srodki-do-usuwania-powlok-2"><span class= label-wraper>Środki do usuwania powłok</span>
+                        <span class="label-wraper-description"><span class="labelWrapper">Do usuwania starych powłok jednokomponentowych farb, lakierów, lazur i klejów</span></span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item menu__item--liberonProducts"><a class="menu__item__link liberon-products-btn" href="http://localhost/Hardex-website/liberon">Produkty Liberon <span class="fas fa-caret-down liberon"></span></a>
+                <div class="menu__subMenu__liberon">
+                    <ul class="menu__submenu menu__submenu--liberon">
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/przygotowanie-drewna"><span class= label-wraper>Przygotowanie drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/barwienie-ochrona-drewna"><span class= label-wraper>Barwienie i ochrona drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/woskowanie-drewna"><span class= label-wraper>Woskowanie derwna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/renowacja-drewna"><span class= label-wraper>Renowacja drewna</span></a>
+                        </li>
+                        <li class="menu__subMenu__item menu__subMenu__item--conteiner"><a class="menu__subMenu__link" href="http://localhost/Hardex-website/kategoria-produktow-liberon/produkty-do-zlocenia-drewna"><span class= label-wraper>Produkty do złocenia drewna</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/promocje">Promocje</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/zamawianie">Jak zamawiać?</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/dostawa">Dostawa</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="http://localhost/Hardex-website/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="breadcrumb">
+        <a href="http://localhost/Hardex-website/produkty-na-zewnatrz" class="breadcrumb-link">Produkty na zewewnątrz</a><span>/</span>
+        <a href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-2" class="breadcrumb-link">Farby</a><span>/</span>
+        <a href="http://localhost/Hardex-website/kategoria-produktow-v33/farby-do-metalu" class="breadcrumb-link">Farby do metalu</a><span>/</span>
+        <span class="breadcrumb-link-active breadcrumb-link">Farba do metalu bezpośrednio na rdzę piaskowa</span>
+    </div>
+    <main class="products__main--conteiner">
+
+        <div class="productPage__main">
+            <div class="productPage__row">
+                <div class="productPage__col_left">
+                    <div class="prodoctPage_title">
+                        <h1>Farba do metalu bezpośrednio na rdzę piaskowa
+                        </h1>
+                    </div>
+                    <img src="../media/products/farba-do-metalu-bezpośrednio-na-rdzę-mat.png" alt="Farba do metalu bezpośrednio na rdzę piaskowa 3V3" class="productPage_image">
+                </div>
+                <div class="productPage__col_right">
+                    <p>Farba do metalu bezpośrednio na rdzę mat 3V3 jest przewidziana do malowania elementów żelaznych oraz stalowych, zarówno na zewnątrz ja ki wewnątrz. </p>
+
+                    <div class="productPage_price">
+
+                        <div class="productPage_price--title">CENY:</div>
+                        <div class="productPage_price--fromCapacity">
+                            <span>0,25l / 100 zł</span>
+                            <span>0,75l / 100 zł</span>
+                            <span>2,5l / 100 zł</span>
+                            <span>5l / 100 zł</span>
+                        </div>
+                    </div>
+                    <div class="productPage__button--technical-specification-link"><a href="https://www.v33.pl/wp-content/uploads/2018/04/dpd047-technical-file-farba-do-metalu-bezpo%C5%9Brednio-na-rdz%C4%99-mat-V33.pdf" target="_blank">Specyfikacja techniczna</a></div>
+                </div>
+            </div>
+            <div class="productPage__colors--conteiner">
+                <h2>Kolory</h2>
+                <div class="productPage__colors--boxes">
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/srebrny.jpg" alt="Kolor Srebrny"></div>
+                        <div class="productPage__colors--description">Srebrny</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/szarozielony.jpg" alt="Kolor Szarozielony"></div>
+                        <div class="productPage__colors--description">Szarozielony</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/ciemnozielony.jpg" alt="Kolor Ciemnozielony"></div>
+                        <div class="productPage__colors--description">Ciemnozielony</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/brązowy.jpg" alt="Kolor Brązowy"></div>
+                        <div class="productPage__colors--description">Brązowy</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/ciemny-grafit.jpg" alt="Kolor Ciemny grafit"></div>
+                        <div class="productPage__colors--description">Ciemny grafit</div>
+                    </div>
+                    <div class="productPage__color-box">
+                        <div class="productPage__color-image">
+                            <img src="../media/colors/czarny.jpg" alt="Kolor Czarny"></div>
+                        <div class="productPage__colors--description">Czarny</div>
+                    </div>
+
+                </div>
+
+                <div class="productPage__colors--message">
+                    <p><span>Przeczytaj! </span>Przedstawione powyżej kolory dosyć wiernie przedstawiają rzeczywiste kolory produktu, jednak należy, mimo wszystko traktować je jako poglądowe.</p>
+                </div>
+            </div>
+
+            <div class="productPage--description">
+                <div class="productPage__properties-destiny--conteiner">
+
+                    <div class="productPage__properties-destiny--content">
+                        <div class="productPage__properties-destiny">
+                            <h2>Właściwości i przeznaczenie</h2>
+                            <article>
+                                <p>Farba do metalu bezpośrednio na rdzę to doskonała ochrona i dekoracja wyrobów z żelaza i stali np. bramy, kraty wyroby ozdobne. Farba nadaje się do metali niezależnych takich jak blacha ocynkowana, miedź, aluminium, PCV
+                                    tylko po użyciu podkładu Metale&Plastik V33.</p>
+                                <p> Dużym atutem jest krótki czas schnięcia między aplikacjami. Odporna na promieniowanie UV oraz złe warunki pogodowe.</p>
+                            </article>
+                        </div>
+
+                        <div class="productPage__product-label">
+                            <h3>Wykończenie: MAT</h3>
+                            <h3>Czas między warstwami: 8 H</h3>
+                            <h3>Wydajność: 16M2</h3>
+                            <h3>Pojemność: 0,25L, 0,75L, 2,5L, 5L</h3>
+                            <h3>Czyszczenie narzędzi: BENZYNA LAKOWA</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <article>
+                        <h2>Zastosowanie</h2>
+                        <section>
+                            <h3>Przygotowanie podłoża</h3>
+                            <p>Powierzchnia musi być czysta, sucha, odtłuszczona, bez luźnej, odpadającej rdzy.</p>
+                            <ul>
+                                <li>
+                                    <h4>powierzchnie nowe:</h4>
+                                    powierzchnię odtłuścić, musi ona być sucha i czysta; W celu zwiększenia przyczepności farby do podłoża należy przeszlifować powierzchnię papierem ściernym
+                                </li>
+                                <li>
+                                    <h4>powierzchnie zardzewiałe:</h4>
+                                    luźną i odpadającą rdzę należy usunąć papierem ściernym lub szczotką drucianą
+                                </li>
+                                <li>
+                                    <h4>powierzchnie pomalowane, farba uszkodzona:</h4>
+                                    uszkodzoną powłokę należy usunąć specjalnym Środkiem do usuwania starych powłok V33, a następnie podłoże odtłuścić
+                                </li>
+                                <li>
+                                    <h4>powierzchnie malowane, nienaruszona powłoka farby:</h4>
+                                    powierzchnię odkurzyć i opłukać w celu czyszczenia z ewentualnych resztek soli. Pomalować Farbą do metalu bezpośrednio na rdzę V33 (farba podkładowa nie jest konieczna)
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Aplikacja</h3>
+                            <p>Farbę do metalu bezpośrednio na rdzę V33 należy dobrze wymieszać – do uzyskania jednolitej, gładkiej postaci.</p>
+                            <ol>
+                                <li>Przed pomalowaniem powierzchnię lekko przeszlifować papierem ściernym, aby farba lepiej przylegała.</li>
+                                <li>Nanieść pędzlem dwie warstwy nierozcieńczonej farby.</li>
+                            </ol>
+                            <p>W przypadku nakładania pistoletem rozcieńczyć farbę benzyną lakową ok. 10%. <br>Zalecana grubość warstwy – 100 µm po wyschnięciu. <br>Temperatura nakładania: 10°C – 20°C.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Porady</h3>
+                            <p>Unikać prac na słońcu. Ciepło absorbowane przez metal powoduje zbyt szybkie schnięcie farby co szkodzi dobrej przyczepności.
+                            </p>
+                            <p>Malować w warunkach suchych, unikać przeciągów, kurzu.
+                            </p>
+                        </section>
+
+                    </article>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+        <div id="topBtn" class="navigation__link--top"><img class="navigation__link--top_image" src="http://localhost/Hardex-website/media/icons/navigate-up-arrow.png" alt="Strzałka do góry"></div>
+    </main>
+    <footer class="footer ">
+        Strona firmy Hardex PHU - hurtowni produktów firmy 3V3
+    </footer>
+    <script src="../main.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#conteiner-nav").load("http://localhost/Hardex-website/nav-bar.html");
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
