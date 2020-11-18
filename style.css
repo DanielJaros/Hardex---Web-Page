@@ -749,8 +749,8 @@
     
     .productPage__colors--boxes {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         margin: 1rem auto;
         width: 100%;
     }
@@ -761,9 +761,9 @@
         justify-content: space-between;
         align-content: center;
         height: 80px;
-        margin: 10px 1% 14px 1%;
+        margin: 10px 5% 14px 5%;
         max-width: 60px;
-        min-width: 20px;
+        min-width: 60px;
         width: 100%;
     }
     
