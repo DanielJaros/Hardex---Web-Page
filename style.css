@@ -266,13 +266,15 @@
     }
     
     .header__telephone--icon {
+        display: block;
         height: 1.2rem;
         padding-right: .3rem;
         transition: .3s;
     }
     
     .header__telephone--link {
-        align-content: flex-end;
+        align-items: center;
+        justify-items: center;
         border-radius: 10px;
         border: solid 3px var(--active);
         box-sizing: border-box;
@@ -307,6 +309,87 @@
         width: 100%;
         max-width: 800px;
         margin: 30px auto;
+    }
+    
+    .main__contact--conteiner {
+        align-items: center;
+        color: var(--dark);
+        background: url(media/images/Canva\ -\ Red\ Corded\ Telephone\ on\ White\ Suraface.jpg) center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main__contact--conteiner h3 {
+        text-transform: uppercase;
+    }
+    
+    .main__contact--conteiner p {
+        font-weight: bold;
+    }
+    
+    .main__contact__content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .main__contact--header {
+        display: block;
+        justify-self: flex-start;
+        margin: 20px 0;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .main__contact__mail--icon {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 1%;
+    }
+    
+    .main__contact__mail--link {
+        align-items: center;
+        color: var(--dark);
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        font-weight: bold;
+        justify-items: flex-start;
+        text-decoration: none;
+        width: fit-content;
+    }
+    
+    .main__contact--map {
+        border: 1px solid var(--dark);
+    }
+    
+    .main__contact__telephone--icon {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 1%;
+    }
+    
+    .main__contact__telephone--link {
+        align-items: center;
+        color: var(--dark);
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        font-weight: bold;
+        justify-items: flex-start;
+        text-decoration: none;
+        width: 110px;
+    }
+    
+    .main__contact__telephone--link span {
+        display: inline;
+        width: fit-content;
     }
     
     .main__header {
