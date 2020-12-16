@@ -314,7 +314,7 @@
     .main__contact--conteiner {
         align-items: center;
         color: var(--dark);
-        background: url(media/images/Canva\ -\ Red\ Corded\ Telephone\ on\ White\ Suraface.jpg) center fixed;
+        background: url(media/images/Canva\ -\ Red\ Corded\ Telephone\ on\ White\ Suraface1080.jpg) center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -325,21 +325,21 @@
         width: 100%;
     }
     
-    .main__contact--conteiner h3 {
-        text-transform: uppercase;
-    }
-    
-    .main__contact--conteiner p {
-        font-weight: bold;
-    }
-    
-    .main__contact__content {
+    .main__content {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
     
-    .main__contact--header {
+    .main__content h3 {
+        text-transform: uppercase;
+    }
+    
+    .main__content p {
+        font-weight: bold;
+    }
+    
+    .main__content--header {
         display: block;
         justify-self: flex-start;
         margin: 20px 0;
@@ -390,6 +390,104 @@
     .main__contact__telephone--link span {
         display: inline;
         width: fit-content;
+    }
+    
+    .main__delivery--conteiner {
+        align-items: center;
+        color: var(--dark);
+        background: url(media/images/delivery1080.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: top;
+        box-sizing: border-box;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        height: calc(100vh - 150px);
+        background-size: 1800px;
+        width: 100%;
+    }
+    
+    .main__delivery--conteiner section {
+        margin-bottom: 20px;
+    }
+    
+    .main__ordering--conteiner {
+        align-items: center;
+        color: var(--dark);
+        background: url(media/images/Ordering.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: top;
+        box-sizing: border-box;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        height: calc(100vh - 150px);
+        background-size: 1800px;
+        width: 100%;
+    }
+    
+    .main__ordering--type {
+        color: var(--active);
+        display: flex;
+        flex-direction: row;
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
+    
+    .main__ordering--OR {
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .main__ordering__telephone--link {
+        align-items: center;
+        color: var(--active);
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+        font-weight: bold;
+        justify-items: flex-start;
+        margin-left: 5%;
+        text-decoration: none;
+        width: 180px;
+    }
+    
+    .main__ordering__telephone--icon {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: 1%;
+    }
+    
+    .main__ordering__telephone--link span {
+        display: inline;
+        width: fit-content;
+    }
+    
+    .main__ordering__mail--link {
+        align-items: center;
+        color: var(--active);
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+        font-weight: bold;
+        justify-items: flex-start;
+        margin-left: 5%;
+        text-decoration: none;
+        text-transform: lowercase;
+        width: fit-content;
+    }
+    
+    .main__ordering__mail--icon {
+        height: 1.4rem;
+        width: 1.4rem;
+        margin-right: 1%;
     }
     
     .main__header {
@@ -1306,6 +1404,14 @@
     }
     
     @media (max-width: 865px) {
+        /*--> Pages background covering at mobile menu */
+        .main__delivery--conteiner {
+            height: calc(100vh - 80px);
+        }
+        .main__ordering--conteiner {
+            height: calc(100vh - 80px);
+        }
+        /*<-- */
         .menu {
             flex-direction: column;
             justify-content: flex-start;
