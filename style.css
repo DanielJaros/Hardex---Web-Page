@@ -1401,10 +1401,12 @@
             }
             
             .footer__copyright {
+                display: flex;
                 font-size: .5rem;
                 position: absolute;
                 bottom: 0px;
-                right: 0px;
+                width: 100%;
+                justify-content: center;
             }
             
             .footer__logo {
@@ -1543,7 +1545,23 @@
                     height: 200px;
                 }
                 .footer__conteiner>* {
-                    flex: 2 20%;
+                    flex: initial;
+                    ;
+                }
+                .footer__companyAbout {
+                    width: 120px;
+                }
+                .footer__nav--conteiner {
+                    width: 156px;
+                }
+                .footer__orderingBtn--conteiner {
+                    width: 180px;
+                }
+                .footer__contact__conteiner {
+                    width: 114px;
+                }
+                .footer__copyright {
+                    justify-content: flex-end;
                 }
             }
             /* <------------------------- Footer for Mobile */
