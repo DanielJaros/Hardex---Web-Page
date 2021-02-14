@@ -379,11 +379,13 @@
                 
                 .main__contact--mapL {
                     border: 1px solid var(--dark);
+                    margin: 20px;
                 }
                 
                 .main__contact--mapS {
                     border: 1px solid var(--dark);
                     display: none;
+                    margin: 20px;
                 }
                 /* -----> Small Map apear for max-width: 650px */
                 
