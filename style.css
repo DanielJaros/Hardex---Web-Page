@@ -640,8 +640,10 @@
                     display: flex;
                     justify-content: center;
                     width: 100%;
-                    height: calc(100vh - 150px);
-                    position: absolute;
+                    max-height: 1124px;
+                    min-height: 500px;
+                    height: 100%;
+                    S position: absolute;
                     text-transform: uppercase;
                     z-index: 1;
                 }
@@ -667,14 +669,18 @@
                     position: absolute;
                     top: 150px;
                     left: 0;
-                    width: 100%;
+                    max-height: 1124px;
+                    min-height: 500px;
                     height: calc(100vh - 150px);
+                    width: 100%;
                     z-index: 0;
                 }
                 
                 .main__promotion__header__video {
                     width: 100%;
                     height: calc(100vh - 150px);
+                    max-height: 1124px;
+                    min-height: 500px;
                     object-fit: cover;
                 }
                 
